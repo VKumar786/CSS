@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+    background: #262626;
+}
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #fff;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 110px;
+    font-size: 40px;
+    overflow: hidden;
+    background: chartreuse;
+    color: rgb(44, 44, 44);
+    border-radius: 50%;
+}
+.circle .fas{
+    color: rgb(44, 44, 44);
+    margin: 00;
+    padding: 0;
+    animation: animate 1s linear infinite;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(-50px);
+        text-shadow: 0 30px 0 rgb(44, 44, 44);
+    }
+    20%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(0);
+    }
+    60%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(100px);
+    }
+}
+.circle::before{
+    content: 'scroll down';
+    position: absolute;
+    color: rgb(44, 44, 44);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    top: -30px;
+    left: 25px;
+    text-transform: capitalize;
+    font-weight: 500;
+}

@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+    background: #00203f;
+    color: #fff;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #fff;
+    padding: 20px;
+}
+.container::before{
+    content: '';
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg)
+                translateY(23px);
+    width: 30px;
+    height: 30px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    background: #00203f;
+    position: absolute;
+}
+/* thanks for watching video / */
+/* practice it  */

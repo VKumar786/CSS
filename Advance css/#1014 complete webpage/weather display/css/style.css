@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(https://source.unsplash.com/1600x900/?nature,water);
+    background-size: cover;
+    /* background-image: url(.); */
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.app-main{
+    width: 57vh;
+    margin: 100px auto;
+    background-color: #000000d0;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.app-main > *{
+    margin-bottom: 20px;
+}
+.input-box{
+    width: 100%;
+    background-color: #0000007c;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    font-size: 120%;
+    border-radius: 7px;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+.input-box:focus{
+    background-color: #7c7c7c2b;
+}
+:focus::placeholder{
+    color: #e9e9e97c;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.weather-body{
+    color: #fff;
+    padding: 20px 10px;
+    line-height: 2rem;
+    border-radius: 10px;
+    background-color: #0000007c;
+    margin-bottom: 0;
+    height: 50vh;
+}
+.location-details{
+    font-weight: bold;
+}
+.weather-status{
+    padding: 20px;
+}
+.weather-status .temp{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 20px 0;
+    text-shadow: 3px 3px rgba(255, 255, 255, 0.3);
+}
+.weather-status .min-max ,
+.weather-status .weather{
+    font-size: 18px;
+    font-weight: 600;
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#coords_long_lat , #wind_speed{
+    width: 320px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+}
+#coords_long_lat h2, #wind_speed  h2{
+    color: #999999;
+}
+#coords_long_lat , #wind_speed > *{
+    list-style: none;
+}

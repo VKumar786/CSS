@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+.container{
+    margin-top: 8%;
+    border-radius: 10px;
+}
+.card{
+    margin-bottom: 30px;
+}
+.inner{
+    overflow: hidden;
+}
+.inner img{
+    transition: all 1.5s ease;
+
+}
+.inner:hover img{
+    transform: scale(1.1) rotate(5deg);
+    /* if we write a scale of .5 mean that the transition will we half of its image */
+}

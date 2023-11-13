@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login form</title>
+  <link rel="stylesheet" href="./css/sign.css">
+</head>
+
+<body>
+  <form action="/users" method="post">
+    <div class="imgcontainer">
+      <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+    </div>
+
+    <div class="container">
+      <label for="username">Username</label>
+      <input type="text" placeholder="Enter Username" name="username" id="username" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" placeholder="Enter Email" id="email" required>
+      <label for="psw">Password</label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="age">age</label>
+      <input type="text" placeholder="Enter age" name="uname" required>
+
+      <input type="submit" value="SUBMIT">
+    </div>
+  </form>
+  <script src="./js/sign.js"></script>
+</body>
+
+</html>
+
+.then((text)=>{
+  console.log(text)
+}).catch((error)=>{
+  console.log(error)
+})
+
+const express = require('express')
+require('./db/mongoose')
+const userRouter = require('./routers/user')
+const taskRouter = require('./routers/task')
+const path = require('path')
+const bodyParser = require('body-parser'); // middleware
+
+
+const app = express()
+const port = process.env.PORT
+
+// new
+app.use(express.json())
+// old new
+app.use(bodyParser.json());
+
+const publicDir = path.join(__dirname,'../public')
+app.set('view engine', 'hbs');
+
+// home page render
+app.get('',(req,res)=>{
+    res.render('index',{
+        name : 'Vishal'
+    })
+})
+
+app.use(express.static(publicDir))
+app.use(userRouter)
+app.use(taskRouter)
+
+
+
+
+app.listen(port, () => {
+    console.log('Server is up on port ' + port)
+})

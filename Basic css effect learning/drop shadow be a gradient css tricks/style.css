@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0; 
+    background-color: #000;
+}
+.shadow{
+    width: 450px;
+    height: 250px;
+    position: relative;
+    background: url(./male-models-noah.jpg);
+    margin: 100px auto 0;
+    background-size: cover;
+}
+.shadow::before,
+.shadow::after{
+    content: '';
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+    background-size: 400%;
+    z-index: -1;
+    animation: animate 20s ease infinite;
+}
+.shadow::after{
+    filter: blur(10px);
+}
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}

@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 1280px;
+    height: 100vh;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid #333;
+}
+
+#slidebar{
+    width: 5120px;
+    height: 100vh;
+    position: relative;
+    animation: animate 20s none infinite;
+}
+@keyframes animate{
+    0%{
+        left: 0;
+    }
+    25%{
+        left: 0;
+    }
+    30%{
+        left: -1280px;
+    }
+    55%{
+        left: -1280px;
+    }
+    60%{
+        left: -2560px;
+    }
+    65%{
+        left: -2560px;
+    }
+    70%{
+        left: -3840px;
+    }
+    95%{
+        left: -3840px;
+    }
+    100%{
+        left: -5120px;
+    }
+}
+#slidebar img{
+    float: left;
+}  

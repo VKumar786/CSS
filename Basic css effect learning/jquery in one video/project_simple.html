@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .active{
+            background: palegreen;
+            width: 80%;
+            margin: 0 auto;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+</head>
+<body>
+    
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique illum placeat, inventore qui dolores atque repudiandae velit. Nisi dolores totam quidem excepturi aut in, ullam delectus libero fugit adipisci deserunt.</div>
+    
+    <button>click me to style it</button>
+
+    <script>
+        $(function(){
+            $('button').click(function(){
+                $('div').addClass('active');
+            })
+            $('button').dblclick(function(){
+                $('div').removeClass('active');
+            })
+        })
+    </script>
+</body>
+</html>

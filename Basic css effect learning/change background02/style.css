@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    animation: animate 10s infinite;
+}
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 40px;
+    color: #333;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+/* thanks for watching plz practice it  */
+/* daily update in this channel */
+@keyframes animate {
+    0%{
+        background: #00FF00;
+    }
+    20%{
+        background: #00FFFF;
+    }
+    40%{
+        background: #FF00FF;
+    }
+    60%{
+        background: #CC00FF;
+    }
+    80%{
+        background: #F2EA02;
+    }
+    100%{
+        background: #00FF00;
+    }
+    /* remember that the 100% and 0% background color must be same */
+}

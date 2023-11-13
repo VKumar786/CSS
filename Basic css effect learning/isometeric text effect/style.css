@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.isometric{
+    width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #422057ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-30deg) skew(30deg,0);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.isometric P{
+    color: #fcf951ff;
+    font-size: 20px;
+    text-align: justify;
+}
+.isometric:hover h2{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-align: justify;
+    text-transform: uppercase;
+    transform-origin: bottom;
+    transform: skew(-50deg);
+    text-shadow:  -1px -1px 0 #ccc,-2px -2px 0 #ccc,-3px -3px 0 #ccc,-4px -4px 0 #ccc,-5px -5px 0 #ccc;
+}
+.isometric:hover h2:before{
+    position: absolute;
+    content: 'this is a simple heading';
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 30px;
+    text-align: justify;
+    text-transform: uppercase;
+    transform-origin: bottom;
+    transform: skew(50deg);
+    text-shadow:  none;
+}

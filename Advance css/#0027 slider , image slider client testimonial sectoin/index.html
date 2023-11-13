@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Swiper -->
+    <section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img class="quote" src="./images/right-quote.png" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae soluta est alias quisquam quasi iure fugiat itaque consequatur reiciendis deserunt dolorum consectetur pariatur facere, vero necessitatibus, tenetur amet quaerat accusamus!</p>
+                            <div class="details">
+                                <div class="imgBox">
+                                    <img src="https://i.pinimg.com/originals/a7/cb/28/a7cb28756d06b8ff6ebda2075bb4d083.jpg"
+                                        alt="">
+                                </div>
+                                <h3>Someones Famous <br><span>Creative Designer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img class="quote" src="./images/right-quote.png" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae soluta est alias quisquam quasi iure fugiat itaque consequatur reiciendis deserunt dolorum consectetur pariatur facere, vero necessitatibus, tenetur amet quaerat accusamus!</p>
+                            <div class="details">
+                                <div class="imgBox">
+                                    <img src="https://i.pinimg.com/originals/a7/cb/28/a7cb28756d06b8ff6ebda2075bb4d083.jpg"
+                                        alt="">
+                                </div>
+                                <h3>Someones Famous <br><span>Creative Designer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img class="quote" src="./images/right-quote.png" alt="">
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae soluta est alias quisquam quasi iure fugiat itaque consequatur reiciendis deserunt dolorum consectetur pariatur facere, vero necessitatibus, tenetur amet quaerat accusamus!</p>
+                            <div class="details">
+                                <div class="imgBox">
+                                    <img src="https://i.pinimg.com/originals/a7/cb/28/a7cb28756d06b8ff6ebda2075bb4d083.jpg"
+                                        alt="">
+                                </div>
+                                <h3>Someones Famous <br><span>Creative Designer</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        // default script
+        // var swiper = new Swiper(".mySwiper", {
+        //     effect: "coverflow",
+        //     grabCursor: true,
+        //     centeredSlides: true,
+        //     slidesPerView: "auto",
+        //     coverflowEffect: {
+        //         rotate: 50,
+        //         stretch: 0,
+        //         depth: 100,
+        //         modifier: 1,
+        //         slideShadows: true,
+        //     },
+        //     pagination: {
+        //         el: ".swiper-pagination",
+        //     },
+        // });
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows: true,
+            },
+            loop:true,
+        });
+    </script>
+</body>
+
+</html>

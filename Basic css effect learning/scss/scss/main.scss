@@ -1,0 +1,88 @@
+@import "./var";
+
+// 1. operator 
+// if i want to change the size of em 
+
+// 2.Variable 
+// root{
+    //     --color91:#000
+    // }
+    // we simply use this in css to create variable
+// $bg-color:#1dd1a1;
+
+// 3.nesting using scss 
+// use of underscore for more pseudo class and hover effect 
+
+// 4.Mixing 
+@mixin flexproperty {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@mixin commoncode($linespacing , $line) {
+    color: #fff; 
+    // we can use multi , subtract 
+    font-size: 4em + 2em;
+    font-weight: 300;
+    letter-spacing: $linespacing;
+        text-transform: $line;
+        // this is important of passing the parameter
+    }
+    // passing the parameter in mixin 
+    
+// 6.Partial making function for bigger code and then at last include them 
+// like we do in php 
+// so in this we have to write _become making the small like so that we are telling the 
+// compiler that do'nt complie it 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform: capitalize ;
+    background: $bg-color;
+}
+html{
+    font-size: 62.5%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    // display: grid;
+    @include flexproperty();
+    letter-spacing: 0.3rem;
+    // place-items: center;
+    h1{
+        // we can use multi , subtract 
+        @include commoncode(0,initial);
+        padding: 0;
+        margin: 0;
+        transition: 0.5s;
+        position: relative;
+       
+        &:hover{
+        background-color: pink;        
+        padding: 10px;
+        }
+        &:hover::after{
+            content: "";
+            top: -50%;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: palegreen;
+            position: absolute;
+        }
+    }
+
+    p{
+        @include commoncode(1rem,uppercase);
+        // we can use multi , subtract 
+        padding: 0;
+        margin: 0; 
+    }
+}

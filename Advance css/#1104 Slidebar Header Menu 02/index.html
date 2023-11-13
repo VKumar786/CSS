@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function(){
+            $('.slidebarbtn').click(function(){
+                $('.slidebarbtn').toggleClass('active');
+                $('.header01').toggleClass('enjoy');
+            })
+        })
+    </script>
+</head>
+<body>
+    <header class="header01">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Term</a></li>
+        </ul>
+        <button class="slidebarbtn">
+            <div class="hamburger">
+
+            </div>
+        </button>
+    </header>
+</body>
+</html>

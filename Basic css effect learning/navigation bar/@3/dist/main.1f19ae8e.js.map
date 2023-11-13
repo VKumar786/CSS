@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["run","console","log"],"mappings":"AAAA,IAAMA,GAAG,GAAG,SAANA,GAAM,GAAM;AACdC,EAAAA,OAAO,CAACC,GAAR,CAAY,qBAAZ;AACH,CAFD","file":"main.1f19ae8e.js","sourceRoot":"..","sourcesContent":["const run = () => {\r\n    console.log(\"this is vishal here\");\r\n};"]}

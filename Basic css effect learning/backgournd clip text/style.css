@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #00203f;
+    color: #fff;
+}
+.container{
+    position: relative;
+    width: 100%;
+    animation: animate 00.75s infinite;
+    height: 100vh;
+}
+h1{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 150px;
+    color: #000;
+    background: url(./a.jpg);
+    padding: 10px 20px;
+    background-position-x: 200%;
+    background-position-y: -200%;
+    background-size: contain;
+    -webkit-background-clip: text;
+    background-attachment: fixed;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid #fff;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+p{
+    margin:-50px 100px 0 100px;
+    text-align: justify;
+    line-height: 25px;
+}

@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #00a8ff;
+}
+ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    margin: 0;
+    padding: 20px 0;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+ul li{
+    list-style: none;
+    text-align: center;
+    display: block;
+    border-right: 1px solid rgba(0, 0, 0, 1);
+}
+ul li:last-child{
+    border-right: none;
+}
+ul li a{
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 0 50px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+ul li a .icon{
+    width: 40px;
+    height: 40px;
+    /* background: #ccc; */
+    text-align: center;
+    transition: 0.5s;
+    overflow: hidden;
+    transition: 0.5s;
+}
+ul li a .icon .fas{
+    color: #000;
+    text-align: center;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    font-size: 34px;
+}
+ul li a .icon .fas:last-child{
+    color: #00a8ff;
+}
+ul li a:hover .icon .fas{
+    transform: translateY(-44px);
+}
+ul li a .name{
+    height: 20px;
+    display: block;
+    transition: 0.5s;margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul li a .name span{
+    color: #000;
+    text-decoration: none;
+    display: block;
+    /* padding: 0 50px; */
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+ul li a .name span::before{
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    color: #00a8ff;
+    transition: 0.5s;
+    left: 0;
+}
+ul li a:hover .name span{
+    transform: translateY(100%);
+}

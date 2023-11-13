@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1fr 0.5fr;
+    grid-template-areas: "header menu menu menu"
+    "hero hero hero hero"
+    "main main main image"
+    "banner banner banner banner";
+    padding: 5px;
+    text-align: center;
+    color: #555;
+    font-size: 2.2em;
+    border: 25px solid gray;
+    text-transform: capitalize;
+}
+/* header>header</header>
+    <menu>menu</menu>
+    <div id="hero">hero</div>
+    <main>main</main>
+    <div id="image">image</div>
+    <div id="banner">banner</div> */
+header{
+    background: #f9ca24;
+    grid-area: header;
+    margin: 5px;
+}
+menu{
+    background: #f0932b;
+    margin: 0;
+    padding: 0;
+    grid-area: menu;
+	margin: 5px;
+}
+#hero{
+    background: #eb4d4b;
+    margin: 5px;
+    grid-area: hero;
+    
+}
+main{
+    margin: 5px;
+    background: #6ab04c;
+    grid-area: main;
+    
+}
+#image{
+    margin: 5px;
+    background: #c7ecee;
+    grid-area: image ;
+    
+}
+#banner{
+    margin: 5px;
+    grid-area: banner;
+    background: #7ed6df; 
+
+}
+@media (max-width:786px) {
+    body{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 0.5fr 1.5fr 1fr 0.5fr 0.5fr;
+        grid-template-areas: "header header"
+    "hero hero"
+    "menu main"
+    "menu banner"
+    "menu image";
+    }
+}
+@media (max-width:440px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr 1fr 0.5fr 0.5fr;
+        grid-template-areas: "header"
+        "menu"
+    "hero"
+    "main"
+    "banner"
+    "image";
+    /* thaks for watching */
+    }
+}

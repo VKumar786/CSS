@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="45px" viewBox="0 0 54 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>chat</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-234.000000, -1816.000000)" stroke="#3B9921">
+            <g id="chat" transform="translate(236.000000, 1818.000000)">
+                <g id="图层_1" stroke-linecap="round" stroke-width="3" stroke-linejoin="round">
+                    <g id="Group">
+                        <polyline id="Shape" points="3.26071429 25.1904762 0 25.1904762 0 0.152380952 44.047619 0.152380952 44.047619 2.57142857"></polyline>
+                        <polygon id="Shape" points="50 6.14285714 7.14285714 6.14285714 7.14285714 31.1428571 18.6142857 31.1428571 16.3035714 40.7047619 30.1607143 31.1428571 50 31.1428571"></polygon>
+                    </g>
+                </g>
+                <circle id="Oval-2" stroke-width="2" cx="17.2619048" cy="18.6428571" r="2.97619048"></circle>
+                <ellipse id="Oval-2-Copy" stroke-width="2" cx="29.1666667" cy="18.6428571" rx="2.97619048" ry="2.97619048"></ellipse>
+                <ellipse id="Oval-2-Copy-2" stroke-width="2" cx="41.0714286" cy="18.6428571" rx="2.97619048" ry="2.97619048"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

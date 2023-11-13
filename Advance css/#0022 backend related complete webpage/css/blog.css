@@ -1,0 +1,169 @@
+/* blog css start here  */
+
+:root{
+    --white-bg: #fff;
+    --black-bg: #000;
+}
+
+main{
+    width: 98.7%;
+    background: var(--white-bg);
+    padding: 40px;
+    margin-top: 30px;
+}
+
+main div {
+    font-size: 18px;
+}
+
+main div a{
+    background-color: var(--black-bg);
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--white-bg);
+    text-decoration: none;
+}
+
+/* blog css ends here  */
+
+/* responsive main webpage  */
+
+ /* Phone */
+ @media (max-width:320px){
+    body{
+        padding-left: 3%;
+        background-color: var(--main-bg);
+        font-size: 7px;
+        background: pink;
+    }
+    .navigation{
+        width: 75px;
+        height: 60px;
+    }
+    .navigation > *{
+        visibility: hidden;
+    }
+    .navigation .menuToggle{
+        visibility: visible;
+    }
+    .navigation.open > *{
+        visibility: visible;
+    }
+    .navigation.open{
+        visibility: visible;
+        width: 95%;
+        height: auto;
+    }
+    .navigation ul li a {
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+    .navigation ul li.active a {
+        display: block;
+        margin-left: 3%;
+        width: 90%;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation.open ul li.active a .icon{
+    /* .navigation ul li.active a .icon{ */
+        display: inline-block;
+    }
+    .navigation ul li.active a .text{
+        display: inline-block;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation ul li.active{
+        visibility: visible;
+    }
+    .navigation.open ul li.active{
+        visibility: visible;
+    }
+
+    .card-container{
+        padding: 0;
+    }
+    .card-container .card{
+        width: 100%;
+        height: 180px;
+    }
+    .card-container .card .imgbx{
+        width: 98%;
+    }
+    main{
+        width: 93% ;
+    }
+    details{
+        text-align: right;
+    }
+}
+
+/* Tablet */
+@media (min-width:321px) and (max-width:1264px){
+    body{
+        padding-left: 3%;
+        background-color: var(--main-bg);
+        background-color: palegoldenrod;
+        font-size: 14px;
+    }
+    main{
+        width: 98% ;
+    }
+    .navigation{
+        width: 75px;
+        height: 60px;
+    }
+    .navigation > *{
+        visibility: hidden;
+    }
+    .navigation .menuToggle{
+        visibility: visible;
+    }
+    .navigation.open > *{
+        visibility: visible;
+    }
+    .navigation.open{
+        visibility: visible;
+        width: 95%;
+        height: auto;
+    }
+    .navigation ul li a {
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+    .navigation ul li.active a {
+        display: block;
+        margin-left: 3%;
+        width: 90%;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation.open ul li.active a .icon{
+    /* .navigation ul li.active a .icon{ */
+        display: inline-block;
+    }
+    .navigation ul li.active a .text{
+        display: inline-block;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation ul li.active{
+        visibility: visible;
+    }
+    .navigation.open ul li.active{
+        visibility: visible;
+    }
+
+    .card-container .card{
+        width: 299px;
+        height: 180px;
+    }
+    .card-container .card .imgbx{
+        width: 98%;
+    }
+    details{
+        text-align: right;
+    }
+    /* card  */
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #150019;
+    min-height: 100vh;
+}
+.navigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    background: #3e0748;
+    min-height: 100vh;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation:hover,
+.navigation.active{
+    width: 300px;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navigation ul li{
+    list-style: none;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.navigation ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    position: relative;
+    display: flex;
+    transition: 0.5s;
+    user-select: none;
+}
+.navigation ul li a .icon{
+    min-width: 60px;
+    min-height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+.navigation ul li a .title{
+    min-width: 60px;
+    min-height: 60px;
+    line-height: 60px;
+    text-align: center;
+    padding: 0 10px;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+}
+.navigation ul li a:hover{
+    background: #ea1d63;
+}
+.navigation ul li a .icon .fas{
+    font-size: 24px;
+}
+.toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #3e0748;
+    background-image: url(./bars-solid\ \(2\).svg);
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    user-select: none;
+}
+.toggle.active{
+    background-image: url(./times-solid\ \(1\).svg);
+    background-position: center center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-color: #ea1d63;
+}
+@media (max-width:750px) {
+    .navigation{
+        left: -60px;
+    }
+    .navigation.active{
+        left: 0;
+        width: 100%;
+    }
+}

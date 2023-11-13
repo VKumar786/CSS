@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(./1.jpg);
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+}
+.circle{
+    background: url(./1.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle();
+    margin: 20px 20px 20px 0;
+}
+h1{
+    font-size: 45px;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+p{
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}

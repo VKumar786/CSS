@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+form{
+    border: 1px solid black;
+    width: 350px;
+    padding: 10px 20px;
+    background-color: darkgray;
+    color: #fff;
+}
+form tr{
+    margin-top: 5px;
+}
+form input[type="phone"]{
+    width: 110px;
+}

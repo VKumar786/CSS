@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio webapge</title>
+    <link rel="shortcut icon" href="./images/sunny-outline.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li><a onclick="toggleMenu();" href="#banner">Home</a></li>
+                <li><a onclick="toggleMenu();" href="#about">About</a></li>
+                <li><a onclick="toggleMenu();" href="#services">Services</a></li>
+                <li><a onclick="toggleMenu();" href="#project">Project</a></li>
+                <li><a onclick="toggleMenu();" href="#testimonials">Testimonials</a></li>
+                <li><a onclick="toggleMenu();" href="#copyright">Contact</a></li>
+            </ul>
+            <!-- <div class="themeChange">
+                <img src="./images/moon-outline.svg" class="light" alt="">
+                <img src="./images/flashlight-outline.svg" class="dark" alt="">
+                <p class="light">Switch to dark theme</p>
+                <p class="dark">Switch to light theme</p>
+            </div> -->
+            <button id="theme-toggle" class="btn btn-link btn-sm ml-2 small" type="button">
+                <span class="d-block-light d-none">{{> "icons/moon"}}</span>
+                <span class="d-block-dark d-none">{{> "icons/sun"}}</span>
+            </button>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <a href="#" class="logo">Portfolio</a>
+                <div class="toggle">
+                    <ion-icon name="grid-outline"></ion-icon>
+                </div>
+            </div>
+
+            <!-- banner  -->
+            <section class="banner" id="banner">
+                <div class="content">
+                    <div class="imgBx">
+                        <img src="./images/owner-image.jpg" alt="">
+                    </div>
+                    <h2>Vishal Kumar</h2>
+                    <p>I'm a creative Front End Web Developer.</p>
+                    <a href="./cv/index.html" class="btn">Download My CV</a>
+                    <div class="socialMedia">
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-discord"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <ion-icon name="bug-outline"></ion-icon>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </section>
+
+            <!-- about -->
+            <section class="about adjust" id="about">
+                <div class="title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="content">
+                    <div class="textBox">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellendus officiis dolorum
+                            consequatur dicta in blanditiis asperiores minima corrupti dolore cum dolores quos corporis
+                            consectetur est reprehenderit cupiditate, labore nihil. Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Maiores incidunt hic porro quisquam amet perferendis corrupti
+                            veniam. Iusto exercitationem nihil fuga commodi soluta asperiores facilis sapiente, pariatur
+                            omnis fugit placeat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nihil!
+                            <br> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae officia
+                            laborum vitae adipisci veritatis consequatur corrupti molestiae similique explicabo
+                            reiciendis, sunt ratione officiis deleniti? Optio officiis eum fugiat iste voluptatem nemo
+                            numquam, nostrum soluta laborum!
+                        </p>
+                    </div>
+                    <div class="imgBox">
+                        <img src="./images/masti.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- service -->
+            <section class="services adjust" id="services">
+                <div class="title">
+                    <h2>Our Services</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="content">
+                    <div class="serviceBox">
+                        <img src="./images/icon1.png" alt="">
+                        <h2>Website Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium porro obcaecati eaque
+                        </p>
+                    </div>
+                    <div class="serviceBox">
+                        <img src="./images/icon2.png" alt="">
+                        <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium porro obcaecati eaque
+                        </p>
+                    </div>
+                    <div class="serviceBox">
+                        <img src="./images/icon3.png" alt="">
+                        <h2>Android App</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium porro obcaecati eaque
+                        </p>
+                    </div>
+                    <div class="serviceBox">
+                        <img src="./images/icon4.png" alt="">
+                        <h2>Photography</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium porro obcaecati eaque
+                        </p>
+                    </div>
+                    <div class="serviceBox">
+                        <img src="./images/icon5.png" alt="">
+                        <h2>Content Writing</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium porro obcaecati eaque
+                        </p>
+                    </div>
+                    <div class="serviceBox">
+                        <img src="./images/icon6.png" alt="">
+                        <h2>video editing</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium porro obcaecati eaque
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- projects  -->
+            <section class="project adjust" id="project">
+                <div class="title">
+                    <h2>Recent Work</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="content">
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="./images/img1.jpg" alt="my-image">
+                        </div>
+                        <div class="textBx">
+                            <h2>Project 01</h2>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="./images/img2.jpg" alt="my-image">
+                        </div>
+                        <div class="textBx">
+                            <h2>Project 02</h2>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="./images/img3.jpg" alt="my-image">
+                        </div>
+                        <div class="textBx">
+                            <h2>Project 03</h2>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="./images/img4.jpg" alt="my-image">
+                        </div>
+                        <div class="textBx">
+                            <h2>Project 04</h2>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="./images/img5.jpg" alt="my-image">
+                        </div>
+                        <div class="textBx">
+                            <h2>Project 05</h2>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="./images/img6.jpg" alt="my-image">
+                        </div>
+                        <div class="textBx">
+                            <h2>Project 06</h2>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="./images/img7.jpg" alt="my-image">
+                        </div>
+                        <div class="textBx">
+                            <h2>Project 07</h2>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="./images/img8.jpg" alt="my-image">
+                        </div>
+                        <div class="textBx">
+                            <h2>Project 08</h2>
+                        </div>
+                    </div>
+                    <div class="workBx">
+                        <div class="imgBx">
+                            <img src="./images/img9.jpg" alt="my-image">
+                        </div>
+                        <div class="textBx">
+                            <h2>Project 09</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="testimonials adjust" id="testimonials">
+                <div class="title">
+                    <h2>Testimonials</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="content">
+                    <div class="testimonialsBox">
+                        <div class="imgBx">
+                            <img src="./images/user1.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla earum consequatur nisi hic,
+                            eligendi aliquam amet, minima assumenda voluptate praesentium, quas sint iste vel. Debitis
+                            reprehenderit recusandae nesciunt officia ullam?</p>
+                        <h4>someone Famous <br><span>Website Designer</span></h4>
+                    </div>
+                    <div class="testimonialsBox">
+                        <div class="imgBx">
+                            <img src="./images/user2.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla earum consequatur nisi hic,
+                            eligendi aliquam amet, minima assumenda voluptate praesentium, quas sint iste vel. Debitis
+                            reprehenderit recusandae nesciunt officia ullam?</p>
+                        <h4>someone Famous <br><span>Website Designer</span></h4>
+                    </div>
+                    <div class="testimonialsBox">
+                        <div class="imgBx">
+                            <img src="./images/user3.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla earum consequatur nisi hic,
+                            eligendi aliquam amet, minima assumenda voluptate praesentium, quas sint iste vel. Debitis
+                            reprehenderit recusandae nesciunt officia ullam?</p>
+                        <h4>someone Famous <br><span>Website Designer</span></h4>
+                    </div>
+                    <div class="testimonialsBox">
+                        <div class="imgBx">
+                            <img src="./images/user3.jpg" alt="">
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla earum consequatur nisi hic,
+                            eligendi aliquam amet, minima assumenda voluptate praesentium, quas sint iste vel. Debitis
+                            reprehenderit recusandae nesciunt officia ullam?</p>
+                        <h4>someone Famous <br><span>Website Designer</span></h4>
+                    </div>
+                </div>
+            </section>
+
+            <!-- contact  -->
+            <section class="contact adjust" id="contact">
+                <div class="title">
+                    <h2>Let's Say Hi</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="contactForm">
+                    <div class="row">
+                        <input type="text" name="" placeholder="First Name" id="">
+                        <input type="text" name="" placeholder="Last Name" id="">
+                    </div>
+                    <div class="row">
+                        <input type="email" name="" placeholder="Email Address" id="">
+                        <input type="text" name="" placeholder="Mobile No." id="">
+                    </div>
+                    <div class="row2">
+                        <textarea name="" placeholder="Message"></textarea>
+                    </div>
+                    <div class="row2">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+            </section>
+
+            <!-- copyright text  -->
+            <div class="copyright" id="copyright">
+                <p>Copyright © 2022 vishal kumar . All Right Reserved .</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let toggle = document.querySelector('.toggle')
+        let topbar = document.querySelector('.topbar')
+        let main = document.querySelector('.main')
+        let navigation = document.querySelector('.navigation')
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('active')
+            topbar.classList.toggle('active')
+            navigation.classList.toggle('active')
+            main.classList.toggle('active')
+        })
+        // <!-- fix menu active  -->
+        function toggleMenu() {
+            let navigation = document.querySelector('.navigation')
+            let main = document.querySelector('.main')
+            navigation.classList.remove('active')
+            main.classList.remove('active')
+        }
+        var toggle1 = document.getElementById("theme-toggle");
+        localStorage.setItem('theme','dark')
+        var storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        if (storedTheme)
+            document.documentElement.setAttribute('data-theme', storedTheme)
+
+
+        toggle1.onclick = function () {
+            var currentTheme = document.documentElement.getAttribute("data-theme");
+            var targetTheme = "light";
+
+            if (currentTheme === "light") {
+                targetTheme = "dark";
+            }
+
+            document.documentElement.setAttribute('data-theme', targetTheme)
+            localStorage.setItem('theme', targetTheme);
+        };
+
+    </script>
+
+
+
+    <!-- script of icon.io icons  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

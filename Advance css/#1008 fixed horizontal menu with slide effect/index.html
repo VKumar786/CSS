@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('.menu-toggle').toggleClass('active');
+                $('nav').toggleClass('enjoy');
+            })
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div class="menu-toggle">
+            <span></span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="section1">
+        <img src="./1.jpg" alt="">
+    </div>
+    <div class="section2">
+        <h1>Simple Heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro accusantium ducimus voluptates architecto, fugit nostrum eligendi laboriosam ea dicta id doloremque dolorum molestias natus modi atque, similique hic aperiam corporis.</p>
+    </div>
+    <div class="section3">
+        <img src="./2.jpg" alt="">
+    </div>
+</body>
+</html>

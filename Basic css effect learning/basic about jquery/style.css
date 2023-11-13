@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #262626;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px;
+    transition: 0.5s;
+}
+ul li.active a{
+    background: #262626;
+    color: #fff;
+}

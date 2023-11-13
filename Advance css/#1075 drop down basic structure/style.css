@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#container{
+    margin-top: 20px;
+    margin-left: 275px;
+}
+
+#container ul{
+    list-style: none;
+}
+#container ul li{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    background-color: cyan;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    border: 1px solid #333;
+    float: left;
+    border-radius: 8px;
+    position: relative;
+}
+#container ul li:hover{
+    background-color: rgb(23, 151, 23);
+    color: #fff;
+}
+#container ul ul{
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+#container ul li:hover > ul{
+    display: block;
+}
+#container ul ul ul{
+    position: absolute;
+    margin-left: 150px;
+    top: 0;
+}

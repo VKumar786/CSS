@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="text" class="raw" contenteditable="">Text</div>
+    
+    <script>
+        var text = document.getElementById('text');
+        var shadow = '';
+        for(var i = 0 ; i < 25; i++){
+            shadow += (shadow? ',':'') + i*1 + 'px ' + i*1 + 'px  0 #01ded3';
+        }
+        text.style.textShadow = shadow;
+
+        var options = {
+        strings: ['hi','Be a Designer','Be a Creator','Be a Developer','Thanks for Watching'],
+        typeSpeed: 80,
+        smartBackspace: true,
+        loop: true
+        };
+
+        var typed = new Typed('.raw', options);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allowing camera in webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    <div class="container">
+        <video autoplay="true" loop controls id="videoElement"></video>
+    </div>
+    <button id="btn">
+        Stop
+    </button>
+    <script src="./main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(){
+            var stream = video.srcObject;
+            var tracks = stream.getTracks();
+
+            for (var i = 0; i < tracks.length; i++) {
+                var track = tracks[i];
+                track.stop();
+            }
+
+            video.srcObject = null;
+            })
+        })
+    </script>
+</body>
+</html>

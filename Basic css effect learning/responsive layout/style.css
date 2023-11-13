@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.container{
+    display: flex;
+    background: gainsboro;
+    flex-direction: column;
+    gap: 4vh;
+    /* padding: 4vh; */
+    /* border: 4vh solid gray; */
+    /* 1vh = 16px */
+}
+.block-3, .block-2, .block-1{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    height: 44vh;
+    border: 2vh none;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.box-1 ,.box-2,.box-3,.box-4 ,.box-5,.box-6,.box-7 ,.box-8,.box-9{
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 350px;
+    text-align: center;
+    line-height: 44vh;
+    border: 5px solid #fff;
+    color: #fff;
+}
+/* [class ^="block-"]{
+    
+    //To lay the boxes in a row.
+    display: flex;
+    flex-direction: row;
+    
+    //Removing border(1vh+1vh), gap, & padding from the height
+    // And then equally distributing spaces between the 
+    // .block-* classes by dividing it by 3
+    
+    height: (100vh-2vh -$gap*2-$padding*2) / 3;
+    
+    // putting gap between .box-* classes
+    gap: $gap;
+    
+    // Style rules for mobile display
+    
+} */
+
+/* $gap : 4vh; */
+/* $padding : 4vh; */
+/* $color : #48CAE4; */
+/* $bp : (
+    @include query (mobile){
+        flex-direction: column;
+        
+        // you can pick any value you wish.
+        height: 500px;
+    }
+    mobile : 480px,
+    tablet : 768px,
+    desktop : 1440px,
+    ); */
+    @media (max-width:768px) {
+        .block-3, .block-2, .block-1{
+            flex-direction: column;
+            height: 500px;
+        }
+        .box-1{
+            background: #fe4a49;
+        }
+        .box-2{
+            background: #005b96;
+        }
+        .box-3{
+            background: #451e3e;
+        }
+        .box-4{
+            background: #0e9aa7;
+        }
+        .box-5{
+            background: #f9caa7;
+        }
+        .box-6{
+            background: #7bc043;
+        }
+        .box-7{
+            background: #f37736;
+        }
+        .box-8{
+            background: #ee4035;
+        }
+        .box-9{
+            background:  #faebd7;
+        }
+    
+    
+}

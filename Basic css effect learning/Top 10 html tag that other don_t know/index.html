@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html css cool trick which anyone don't know</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"></path></svg>
+    </button>
+    
+    <!-- 1. Details + Summary tag -->
+    <details>
+        <summary>Saste coder</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, possimus error! Aspernatur fugit possimus molestiae id, corporis, sit sapiente itaque officia tempora cupiditate maxime accusamus consequatur provident voluptatum hic magni.</p>
+    </details>
+
+    <!-- 2. Awesome input tag types -->
+    <input type="color" name="" id="">
+    <input type="range" name="" value="2" min="1" max="10" id="">
+
+    <input type="date" name="" id="">
+    <!-- <input type="datetime" name="" id=""> -->
+    <input type="datetime-local" name="" id="">
+
+    <input type="time" name="" id="">
+    <input type="week" name="" id="">
+
+    <!-- 3. meter tag -->
+    <meter max="100" value="80"></meter>
+
+    <!-- 4. progress tag  -->
+    <progress value="50" max="100"></progress>
+
+    <!-- 5. Datalist  -->
+    <input type="text" name="" list="suggestion" placeholder="Enter Car Name">
+    <datalist id="suggestion">
+        <option value="Nano">It is a nice car</option>
+        <option value="Aulto">it is good for adventurous moments</option>
+        <option>tesla</option>
+        <option>maruti</option>
+        <option>honda</option>
+        <option>swift</option>
+        <option>baleno</option>
+    </datalist>
+
+    <!-- 6. optiongroup -->
+    <select name="" id="">  
+        <!-- <option value="abc">Details. important 1</option>
+        <option value="def">Details. important 2</option>
+        <option value="ghi">nothing much special</option>
+        <option value="jkl">this is make me feel better</option> -->
+        <optgroup label="heading">
+            <option value="abc">this is car 1</option>
+            <option value="def">this is car 2</option>
+        </optgroup>
+        <optgroup label="B.tech">
+            <option value="abc">this is car 3</option>
+            <option value="def">this is car 4</option>
+        </optgroup>
+    </select>
+
+    <!-- (BONUS TIP) JS .closest() -->
+    <article>
+        <div id="div-01">here is div 01</div>
+        <div id="div-02">here is div 02</div>
+        
+        <section>
+            <div id="div-03">here is div 03</div>
+            <div id="div-04">here is div 04</div>
+            <div id="div-05">here is div 05</div>
+        </section>
+    </article>
+    <script>
+        var blackdiv = document.getElementById('div-03')
+        blackdiv.closest('div').style.backgroundColor = "red"
+        blackdiv.closest('section').style.backgroundColor = "yellow"
+        blackdiv.closest('article').style.backgroundColor = "purple"
+    </script>
+</body>
+</html>

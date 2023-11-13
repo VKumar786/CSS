@@ -1,0 +1,219 @@
+<!-- ! <-- this is know aas boiler plate -->
+<!DOCTYPE html>
+<!-- we have types of documents like html and xhtml -->
+<!--this is my code-->
+<html lang="en">
+    <!-- this mean that language is english -->
+    <!--heads starts from here-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is description">
+    <!-- this is the discription of the website when we are using this is will give a short discription about our website  -->
+    <meta name="keywords" content="html, html tutorials,web development">
+    <!-- this is like the tags that we have given to our website to rank in the searches -->
+    <meta name="robots" content="INDEX,FOLLOW">
+    <!-- thiss is the code writen to follow your website generally given (excetion is NOINDEX,NOFOLLOW) -->
+    <meta http-equiv="X-UA-Compatiable" content="ie=edge">
+    <!-- this is for the user which are using internet explrer -->
+    <link rel="stylesheet" href="harry.css">
+    <!-- this how we include external css file with in minutes -->
+    <script src="harry.js"></script>
+    <!-- this how we add javascript extenal files -->
+    <title>this is title</title>
+    <!-- this is the title of my website -->
+</head>
+<body>
+    <!-- this is how we ,sourse uplassh,target,href,add links internal pages,images,fb link on our websites -->
+        <a href="https://google.com"  target="_blank">go to google</a> <br/>
+        <!-- href ->this is know as the attributes  -->
+        <!-- target -> this is used to open the link on the new tab  -->
+        <!-- there is a shortcut press alt and click on the part you wanna to overwrite this will help to utilise you time  -->
+        <!-- br attributes are use tobeak lines  -->
+        <a href="https://facebook.com" target="_blank">go to facebook</a><br/>
+        <a href="https://twiter.com" target="_blank">go to twiter</a><br/>
+        <a href="https://linkedin.com" target="_blank">go to linkedin</a><br/>
+        <!-- this is how we add links on our websites -->
+        <a href="/vishal.html" target="_blank" >vishal kumar html page</a><br/>
+        <!-- this how we open our internal links  -->
+        <!-- this is the way how we link our files like vishal.html   -->
+        <img src="vishal.jpg" height="1000px" width="500px" alt="error 404 image not found" ><br>
+        <!-- we dont use width and hienght attribute for looking the thing more decorative it is the work of css file  -->
+        <!-- atl is used as alternating when the image has not lode -->
+        <!-- alt is useful when a user of slow internet can'nt load image we can write the information of the image in the text form -->
+        <!-- src tag we write the path of the image  -->
+        <img style="border: 2px solid rgb(255, 0, 0);" src="https://source.unsplash.com/user/erondu/1150x800" alt="remote image">
+        <!-- we can use sourse upslash for getting the random images  -->
+        <!-- we can change the size of the image and we can get the particular image /? ?->writing what you want like nature ,sports -->
+     <!-- this is heading,lorem,paragraph,br,strong,p*4,alt+z,hr,i,b, ctrl +enter tags -->
+        <h1>VISHAL KUAMAR</h1>
+        <h2>VISHAL KUAMAR</h2>
+        <h3>VISHAL KUAMAR</h3>
+        <h4>VISHAL KUAMAR</h4>
+        <h5>VISHAL KUAMAR</h5>
+        <h6>VISHAL KUAMAR</h6>
+        <!-- we cannot use heading as bold becouse it will down our search engine optimise  -->
+        <P>Lorem, ipsum dolor.</P>
+        <!-- we have use lorem and press the number which i wanna to insert then it will automatically insert it -->
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <strong>this is strong</strong>Inventore <em>this is emphasiesed or italic </em>impedit optio rerum<br> saepe quis iste<b>this is bold</b> <i>this is italic tag</i>dolorum officia vero illum sint?</p><hr>
+        <!-- i tag is usseed to italic the text writen  -->
+        <!-- b tag is use to bold the text writen  -->
+        <!-- do'nt recommed the i and b tag for italic and bold use em and strong  -->
+        <!-- hr is used to make a horizontal line o the webpages -->
+        <!-- br tag is self closing tag it is used to break the lines  -->
+        <!-- this is not a good pratice of breaking the lines using br tags when we cover it later on the css learning -->
+        <!-- em tag will write the word in italic or cursive writing -->
+        <!-- strong tag will bold the set of word in it  -->
+        <!-- if this value float then go to setting > command palette > the type toogle word wrap OR ALT+Z -->
+        <!-- IF WE WANNA to open multiple paragrah so we use p*4 -> this how we write and then press tab to write in paticular paragraghtag -->
+        <p>first</p>
+        <p>secound</p>
+        <p>third</p><!--we use the code p*4-->
+        <p>fourth</p>
+        <!-- if we are typing in a line and we wanna to write in the next line the we use ctrl + enter -->
+        <!-- ctrl +enter to jump into the new line -->
+        <!-- lorem is use for making dummby text  -->
+    <!-- we will study the form and input tags,div,input:date,input:radio,type="checkbok",shortcut key,reset,text area,label-->
+        <form action="backend.php">
+            <label for="name" >Name</label><!--label is used to enter a value but it will select the entier box-->
+            <div>
+               <input type="text" name="myname" id="name"> 
+            </div><br>
+            <div>
+                role: <input type="text" name="myrole">   
+            </div><br> 
+            <div>
+                email <input type="email" name="myemail" id="">
+            </div><br>
+            <div>
+                date :<input type="date" name="mydate" id="">
+            </div><br>
+            <div>
+                date :<input type="number" name="mybonus" id="">
+            </div><br>
+            <div>
+                are you eligilble :<input type="checkbox" name="mycheckbok" id="" checked> <!--we can bydefault check it-->
+            </div><br>
+            <div>
+                your gender please :<br>
+                gender Male<input type="radio" name="mygender" id="">female<input type="radio" name="mygender" id="">
+                other<input type="radio" name="mygender" id="">
+            </div><br>
+            <div>
+                write about yourself<br><textarea name="mytext" cols="90" rows="10" ></textarea>
+            </div><br>
+            <!-- if we want to create a car menu then USE SELECT  -->
+            <div>
+                <label for="car" >car</label>
+                <select name="mycar" id="car">
+                   <option value="indica" id="car" >indica</option>
+                   <option value="honda city" id="car" selected>honda city</option><!--selected is used for by default-->
+                </SELECT>
+            </div><br>
+            <div>
+                <input type="reset" name="mycheckbok" id="" type="value reset now">
+                <input type="submit" value="submit now">
+            </div><br>
+        </form>
+        <!-- select is used also for the glow of the box which look awesome -->
+        <!-- label is used for the most the more better appearance -->
+        <!-- textarea is used to input the paragraph form the user  -->
+        <!-- type="numeber" accept the value in e mean that if we wanna to write the 4300 we can write it as 43e2 -->
+        <!-- there is a type="reset" use to relod the page  -->
+        <!-- if we wnat to make a pair of code to the other line then we use alt + down arrow key to shift the text  -->
+        <!-- if we have make the name="" a=smae of two then only one will be selected -->
+        <!-- type="radio" is used to take the input like male and femlae case -->
+        <!-- we make a checbook using the type ="checkbox" for the tick right -->
+        <!-- we can enter a number with scroll using type="number " -->
+        <!-- we can input the date using input:date  -->
+        <!-- input:email is use to input the email from the user  -->
+        <!-- input:text is use as in the similar way  -->
+        <!-- name is used by the backend to recogonise the the data as we have taken the example of backend.php  -->
+        <!-- div is a block element which cover all the space -->
+        <!-- we will use div tag tobreak the lines -->
+        <!-- we can use input to enter the text from the user  -->
+        <!-- action atttribute is used to summit the form to which the address is passed -->
+    <!-- table and list -->
+        <ul type="circle">
+            <li>this is my first unordered list</li>
+            <li>this is my secound unordered list</li>
+                <ul type="a">
+                    <li>another open</li>
+                    <li>secount open</li>
+                    <li>third  open</li>
+                </ul>
+            <li>this is my third unordered list</li>
+        </ul>
+        <!-- this is unorderd list in this type ="disc"or"square"or"circle" -->
+        <ol type="I">
+            <li>this is my first ordered list</li>
+            <li>this is my secound ordered list</li>
+            <li>this is my third ordered list</li>
+        </ol>
+        <!--ol is used for the orderd list type="a"or "1"or"A"or"i"or"I" use with ol  -->
+        <!-- we can also nest the list -->
+        <h3>html table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>s.no</th>
+                    <th>name</th>
+                    <th>employe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>vishal</td>
+                    <td>programmer</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>vivek</td>
+                    <td>bussiness</td>
+                </tr><tr>
+                    <td>3.</td>
+                    <td>vijay</td>
+                    <td>programmer</td>
+                </tr>
+            </tbody>
+        </table>
+    <!-- inline and block element,style,anchor tag -->
+        <!-- paragrah is a block element which will cover all the space of the line (width)    -->
+        <!-- span is a inline element which do'nt cover the space in the width  -->
+        <p style="border: 2px solid red;">this is a paragraph</p><p style="border: 2px solid rgb(57, 243, 0);">this is a paragraph</p>
+        <span style="border: 4px solid pink;">this is a span</span><span style="border: 4px solid rgb(255, 0, 242);">this is a span</span>
+        <!-- style ;border is used to color the boder  -->
+        <strong style="border: 2px solid red;">this is a paragraph</strong>
+        <a style="border: 2px solid red;">this is a paragraph</a>
+        <!-- anchor tag is a inline element by using the css we can convert the block element into inline element-->
+        <ol><li style="border: 2px solid rgb(255, 0, 106);">this is a paragraph</li></ol>
+        <div style="border: 2px solid rgb(153, 0, 255);">this is a paragraph</div>
+        <em style="border: 2px solid rgb(0, 255, 255);">this is a paragraph</em>
+        <!-- div , ol ,ul are bolck element  -->
+        <!-- em are inline element -->
+        <!-- also check the img  -->          
+    <!-- ids and classes in html || . is for the class and # is for the ids -->
+        <h3>ids and classes in html </h3>
+        <div id="mainbox" class="redbg blackborder">tihs is ids</div>
+        <!-- id mean identifier RULE one id is given to only one element , it is like that human give name to thier dog and child -->
+        <!-- by the help of id we can assces it , it will help in javascript and css to ascces one particular  -->
+        <!-- if we want to have the color of 100 word in red we can have with the help of css . this will help in making code more attractive  -->
+        <!-- there is no specific rule for classes we can use them as time as possible in each element. -->
+        <!-- by having space in the class be will try to absorb all the properties inside it i.e class="redbg blackborder" -->
+        <span class="rdbg"></span>
+        <!-- if we write span.redbg it will auto fill by the help of the emmit -->
+        <!-- we can use the shortcut like . -> class and # for ids , if we take a example span.redbg and span#mainbox  -->
+        <!-- shortcut un the complex mode like span.redbg.blackborder.anotherclass this will help -->
+        <div class="redbg"></div>
+        <!-- it mean another shortcut like .redbg => it mean that emmit take div tag as default  -->
+        <!-- span.myclass1.myclass2.myclass3 + <tab> -->
+        <!-- if i wannna a multipe class the we use span.myclass1.myclass2.myclass3*4 , print similar element using the emmit -->
+        <span class="myclass1 myclass2 myclass3">first</span>
+        <span class="myclass1 myclass2 myclass3">secound</span>
+        <span class="myclass1 myclass2 myclass3">third</span>
+        <span class="myclass1 myclass2 myclass3">fourth</span>
+        <!-- by the help of tab we can shift tot the new line  -->
+        
+</body>
+</html>

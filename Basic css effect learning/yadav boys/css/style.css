@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+#loader{
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+         /* progress bar start here  */
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(48, 48, 48);
+    border: 2px solid white;
+    border-radius: 5px;
+}
+         /* progress bar start here  */
+            
+                /* all about the navigation bar  */
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 70px;
+    padding: 0 100px;
+    box-sizing: border-box;
+    z-index: 3;
+    font-weight: 300;
+    color: #000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,0.5);
+}
+nav .logo{
+    float: left;
+    height: 100%;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+nav .logo h3{
+    color: #000;
+    top: 0;
+    left: 0;
+    font-weight: 600;
+}
+nav ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: inline-block;
+    position: relative;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 10px;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: 1s;
+    font-weight: 400;
+}
+nav ul:hover li{
+    opacity: 0.2;
+    transition: 1s;
+    filter: blur(2px);
+}
+nav ul li:hover{
+    transition: 1s;
+    opacity: 1;
+    filter: blur(0px);
+}
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    background: #fff;
+    text-align: right;
+    box-sizing: border-box;
+    color: #000;
+    font-size: 30px;
+    display: none;
+}
+@media (max-width:900px) {
+    .toggle{
+        display: block;
+    }
+    nav .logo h3{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5px 0 0 20px;
+    }
+    nav{
+        padding: 0 0 ;
+    }
+    nav ul{
+        width: 100%;
+        display: none;
+        background-color: #fff;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+    }
+    .active
+    {
+        display: block;
+    }
+}
+/* all about the navigation bar  */
+
+.sec01{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.sec01 img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.sec02{
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    position: relative;
+}
+.sec02::before{
+    content: '';
+    width: 50%;
+    height: 100px;
+    position: absolute;
+    top: -48px;
+    left:0;
+    background: #ffffff;
+    transform:skewY(8deg);
+}
+.sec02::after{
+    content: '';
+    width: 50%;
+    height: 100px;
+    position: absolute;
+    top: -48px;
+    right: 0;
+    background: #ffffff;
+    transform:skewY(-8deg);
+}
+section.sec01 h1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0,0.5);
+}
+
+/* all about the footer  */
+footer{
+    width: 100%;
+    background: #111;   
+    color: rgb(230, 230, 230);
+}
+.main-content{
+    display: flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+.box .content{
+    margin: 20px 0 0 0;
+    transition: 2s;
+    position: relative;
+}
+.box .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+}
+.box .content:hover:after{
+    width: 100%;
+}
+.box .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+    transition: 2s;
+}
+.box .content p{
+    text-align: justify;
+}
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+.left .content .social a{
+    padding: 0 2px;
+}
+.left .content .social a i{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+.left .content .social a i:hover{
+    background: #f12020;
+}
+.center .content .fas{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.center .content .fas:hover{
+    background: #f12020;    
+}
+.center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+.center .content .phone{
+    margin: 10px 0;
+}
+.right form .text{
+    margin-bottom: 2px;
+    font-size: 1.0625rem;
+}
+.right form .msg{
+    margin-top: 10px;
+}
+.right form input,.right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+.right form input:hover,
+.right form textarea:hover{
+    outline-color: #3498db;
+}
+.right form input{
+    height: 35px;
+}
+.right form .btn{
+    margin-top: 10px;
+}
+.right form .btn button{
+    height: 40px;
+    color: #fff;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    display: inline-block;
+}
+.right form .btn button:hover{
+    background: #111;
+}
+.bottom {
+    padding: 5px;
+    text-align: center;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+.bottom span{
+    color: #ffffff;
+}
+.bottom a{
+    color: #f12020;
+    text-decoration: none;
+}
+.bottom a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width:900px){
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }  
+    .main-content .box{
+        margin: 50px 0 0 0;
+    }
+}
+/* all about the footer  */

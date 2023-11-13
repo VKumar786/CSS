@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web design - by saste tutorial</title>
+    <!-- link my css file -->
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+
+
+
+    <div class="header">
+
+    <nav>
+        <a href="#" class="logo">vishal</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="left-slidebar"></div>
+
+
+    <div class="row">
+
+        <div class="left-col">
+            <img src="./images/5c59d5b62b86c334b3dffc36e666fad5.jpg" >
+        </div>
+        <div class="right-col">
+            <h1>I'am vishal <br> Website Developer</h1>
+            <p>I have been in website development industry from past 5 year and have worked with more than twenty clients across the  country</p>
+            <div class="social-media">
+                <div class="icon">
+                    <img src="./images/facebook.png" alt="">
+                    <a href="http://facebook.com">
+                        <img src="./images/link.png" alt="">
+                    </a>                   
+                </div>
+                <div class="icon">
+                    <img src="./images/twitter.png" alt="">
+                    <a href="http://twitter.com">
+                        <img src="./images/link.png" alt="">
+                    </a>                   
+                </div>
+                <div class="icon">
+                    <img src="./images/instagram.png" alt="">
+                    <a href="http://instagram.com">
+                        <img src="./images/link.png" alt="">
+                    </a>                   
+                </div>
+                <div class="icon">
+                    <img src="./images/youtube.png" alt="">
+                    <a href="http://youtube.com">
+                        <img src="./images/link.png" alt="">
+                    </a>                   
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="cursor"></div>
+    <script>
+        var cursor = document.getElementById("cursor");
+        document.onmousemove = function(e){
+            cursor.style.left =(e.pageX -25) +"px";
+            cursor.style.top =(e.pageY -25) +"px";
+            cursor.style.display = "block";
+        }
+    </script>
+</body>
+</html>

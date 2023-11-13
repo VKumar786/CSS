@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parllax begin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="zoom">
+        <img src="./mountain1.png" alt="" id="layer1">
+        <img src="./mountain2.png" alt="" id="layer2">
+        <img src="./text.png" alt="" id="layer3">
+    </div>
+    <section class="content">
+        <h2>simple heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci minima voluptatem neque temporibus quae repellendus ratione! Iure, mollitia. Voluptate illo, ipsa, accusamus nemo quae fuga temporibus quibusdam ad eligendi magnam expedita vitae tempore corporis dolorem inventore suscipit quam optio iure laudantium eaque aliquid amet nam. Magni in labore ducimus. Minus in ad veritatis nesciunt accusamus! Quam minima quod maiores quidem unde cupiditate cum ea corporis, quisquam quae molestias odio officia voluptatibus, autem iusto placeat harum ullam ratione? Saepe voluptatum blanditiis eum! A, illum alias! Adipisci error iste voluptatem, voluptatibus unde vitae laborum alias enim rerum fuga harum, illo, possimus beatae ullam nisi quisquam nostrum quas dolor hic illum? Alias, adipisci deserunt repellendus quae at repellat, cum, asperiores natus quasi distinctio sapiente numquam aspernatur modi optio culpa dolorum molestias voluptas aut similique dicta minus officiis fugiat quibusdam? Facere dicta nesciunt dolore adipisci tempore illum assumenda at praesentium esse, minus tenetur. Exercitationem impedit porro quod quia tempore! Neque reprehenderit officia sapiente deleniti nihil optio voluptas distinctio quam, iste quos quidem itaque totam tenetur ab architecto aliquam nesciunt quo recusandae voluptate incidunt sed inventore repudiandae beatae quod? Doloribus corporis, voluptas ea omnis impedit laboriosam iste mollitia voluptate voluptatem quaerat, ipsum voluptatibus deserunt ab! Nostrum consequuntur deleniti perferendis aliquid molestiae architecto, ipsam aut temporibus commodi accusamus alias, magni expedita maiores fugit aspernatur, dolorum nesciunt blanditiis tempore maxime nulla magnam doloribus. Ad quos aperiam aliquid rerum consequatur veritatis, aspernatur inventore nisi repellat labore? Praesentium ad placeat qui aliquid eveniet dolorem aliquam minus commodi sunt architecto?.</p>
+    </section>
+    <script>
+        let layer1 = document.getElementById('layer1');
+        let layer2 = document.getElementById('layer2');
+        let layer3 = document.getElementById('layer3');
+         scroll = window.pageYOffset;
+        document.addEventListener('scroll',  function(e){
+            let offset = window.pageYOffset;
+            scroll = offset;
+            layer2.style.width = (100 + scroll/35) + '%';
+            layer2.style.left = scroll/10 + '%';
+            layer1.style.width = (100 +  scroll/35) + '%';
+            layer1.style.right = scroll/10 + '%';
+        });
+      
+        
+    </script>
+</body>
+</html>

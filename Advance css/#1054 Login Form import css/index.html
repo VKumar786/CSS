@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./hidden_css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/96c0e606a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="login-box">
+        <h1>login</h1>
+        <div class="textbox">
+            <i class="fas fa-user"></i>
+            <input type="text" name="" id="" placeholder="username">
+        </div>
+        <div class="textbox">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="" id="" placeholder="password">
+        </div>
+        <input type="button" value="Submit" name="" class="btn">
+    </div>
+    
+    <script>
+        jQuery(document).ready(function(){
+          jQuery(function() {
+                jQuery(this).bind("contextmenu", function(event) {
+                    event.preventDefault();
+                    alert('Right click is disabled on this site!!')
+                });
+            });
+        });
+        </script>
+</body>
+</html>

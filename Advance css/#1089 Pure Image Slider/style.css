@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.slider{
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    border: 5px solid gray;
+}
+.slider figure{
+    width: 400%;
+    position: relative;
+    margin: 0;
+    animation: animate 20s linear infinite;
+}
+/* 20s ->100%
+4s ->20%
+1s ->5% */
+@keyframes animate {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: 0;
+    }
+}
+/* width 100% */
+.slider figure img{
+    width: 25%;
+    float: left;
+}

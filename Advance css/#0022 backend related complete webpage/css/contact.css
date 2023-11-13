@@ -1,0 +1,262 @@
+/* contact styling start here  */
+
+/* defining root variable */
+:root{
+    /* background color  */
+    --white-bg: #fff;
+
+    /* color */
+    --clr-01 : #f7497d;
+    --clr-02 : #999;
+
+    /* box shadow color  */
+    --bx-shadow-01 : rgba(0, 0, 0, 0.2);
+    --bx-shadow-02 : rgba(0, 0, 0, 0.1);
+}
+
+
+body{
+    background: url(../images/pexels-tom-fisk-4062993.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+
+.container{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 400px;
+    margin-top: 50px;
+    background: var(--white-bg);
+    padding: 40px;
+    user-select: none;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px var(--bx-shadow-01);
+    border: 1px solid var(--bx-shadow-02);
+}
+
+.box h2{
+    margin: 0 0 40px;
+    padding: 0;
+    color: var(--clr-01);
+    text-transform: uppercase;
+}
+
+.box input{
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.box textarea{
+    height: 80px;
+    padding: 10px 0;
+    margin-bottom: 40px;
+    /* text-rendering: none; */
+}
+
+.box input ,
+.box textarea{
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--clr-02);
+}
+
+.box textarea{
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.box input[type="submit"]{
+    border-bottom: none;
+    cursor: pointer;
+    background: var(--clr-01);
+    color: var(--white-bg);
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.box form div{
+    position: relative;
+}
+
+.box form div label{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: var(--clr-02);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.box input:focus ~  label,
+.box input:focus ~  label,
+.box input:valid ~  label,
+.box textarea:valid ~  label{
+    top: -12px;
+    left: 0;
+    color: var(--clr-01);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.box input:focus,
+.box input:focus,
+.box input:valid,
+.box textarea:valid{
+    border-bottom: 2px solid var(--clr-01);
+}
+/* contact styling ends here  */
+
+
+
+
+
+/* responsive main webpage  */
+
+ /* Phone */
+ @media (max-width:472px){
+    body{
+        padding-left: 3%;
+        background-color: var(--main-bg);
+        font-size: 7px;
+    }
+    .navigation{
+        width: 75px;
+        height: 60px;
+    }
+    .navigation > *{
+        visibility: hidden;
+    }
+    .navigation .menuToggle{
+        visibility: visible;
+    }
+    .navigation.open > *{
+        visibility: visible;
+    }
+    .navigation.open{
+        visibility: visible;
+        width: 95%;
+        height: auto;
+    }
+    .navigation ul li a {
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+    .navigation ul li.active a {
+        display: block;
+        margin-left: 3%;
+        width: 90%;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation.open ul li.active a .icon{
+    /* .navigation ul li.active a .icon{ */
+        display: inline-block;
+    }
+    .navigation ul li.active a .text{
+        display: inline-block;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation ul li.active{
+        visibility: visible;
+    }
+    .navigation.open ul li.active{
+        visibility: visible;
+    }
+
+    .card-container{
+        padding: 0;
+    }
+    .card-container .card{
+        width: 100%;
+        height: 180px;
+    }
+    .card-container .card .imgbx{
+        width: 98%;
+    }
+    details{
+        text-align: right;
+    }
+    .box{
+        width: 300px;
+    }
+}
+
+/* Tablet */
+@media (min-width:321px) and (max-width:1243px){
+    body{
+        padding-left: 3%;
+        background-color: var(--main-bg);
+        font-size: 14px;
+    }
+    .navigation{
+        width: 75px;
+        height: 60px;
+    }
+    .navigation > *{
+        visibility: hidden;
+    }
+    .navigation .menuToggle{
+        visibility: visible;
+    }
+    .navigation.open > *{
+        visibility: visible;
+    }
+    .navigation.open{
+        visibility: visible;
+        width: 95%;
+        height: auto;
+    }
+    .navigation ul li a {
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+    .navigation ul li.active a {
+        display: block;
+        margin-left: 3%;
+        width: 90%;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation.open ul li.active a .icon{
+    /* .navigation ul li.active a .icon{ */
+        display: inline-block;
+    }
+    .navigation ul li.active a .text{
+        display: inline-block;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation ul li.active{
+        visibility: visible;
+    }
+    .navigation.open ul li.active{
+        visibility: visible;
+    }
+
+    .card-container .card{
+        width: 299px;
+        height: 180px;
+    }
+    .card-container .card .imgbx{
+        width: 98%;
+    }
+    details{
+        text-align: right;
+    }
+    /* card  */
+}

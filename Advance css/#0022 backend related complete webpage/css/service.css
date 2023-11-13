@@ -1,0 +1,276 @@
+/* service styling start here  */
+
+:root{
+    /* background color  */
+    --white-bg:#fff;
+
+    /* color */
+    --clr-01: #262626;
+    --clr-02: #202020;
+
+    /* box shadow color  */
+    --box-shadow-01: rgba(0, 0, 0, 0.1);
+    --box-shadow-02: rgba(0, 0, 0, 0.3);
+}
+
+li{
+    list-style: none;
+}
+
+.mainservice{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background: var(--white-bg);
+    box-shadow: 0 5px 10px var(--box-shadow-01);
+    width: 98.5%;
+}
+
+.mainservice .card-container{
+    width: 100%;
+    margin: 20px 0;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+body > main > div > div{
+    position: relative;
+    width: 350px;
+    height: 430px;
+    box-shadow: 0 0 10px var(--box-shadow-01);
+    padding: 40px 20px;
+    margin: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transform: translateY(0);
+    transition: 0.5s;
+    background-color: var(--white-bg);
+    box-sizing: border-box;
+    z-index: 1;
+    overflow: hidden;
+}
+/* 
+body > main > div > div .new::before{
+    content: 'New';
+    text-align: center;
+    color: var(--white-bg);
+    position: absolute;
+    top: 10px;
+    left: -50px;
+    width: 50%;
+    height: 30px;
+    background: var(--box-shadow-02);
+    transform-origin: center;
+    transform: rotate(-30deg);
+    filter: blur(0px);
+} */
+
+body > main > div > div:hover{
+    transform: translateY(-15px);
+}
+
+body > main > div > div >h1{
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+body > main > div > div >a{
+    width: 130px;
+    padding: 10px 20px;
+    height: 50px;
+    background-color: var(--clr-02);
+    display: inline;
+    color: var(--white-bg);
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+body > main > div > div >a:hover{
+    width: 135px;
+    height: 50px;
+    text-decoration: underline;
+    background: var(--white-bg);
+    color: var(--clr-01);
+    border: 1px solid var(--clr-01);
+}
+
+/* service styling ends here  */
+
+
+
+
+/* responsive main webpage  */
+
+ /* Phone */
+ @media (max-width:320px){
+    body{
+        padding-left: 3%;
+        background-color: var(--main-bg);
+        font-size: 7px;
+    }
+    .navigation{
+        width: 75px;
+        height: 60px;
+    }
+    .navigation > *{
+        visibility: hidden;
+    }
+    .navigation .menuToggle{
+        visibility: visible;
+    }
+    .navigation.open > *{
+        visibility: visible;
+    }
+    .navigation.open{
+        visibility: visible;
+        width: 95%;
+        height: auto;
+    }
+    .navigation ul li a {
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+    .navigation ul li.active a {
+        display: block;
+        margin-left: 3%;
+        width: 90%;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation.open ul li.active a .icon{
+    /* .navigation ul li.active a .icon{ */
+        display: inline-block;
+    }
+    .navigation ul li.active a .text{
+        display: inline-block;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation ul li.active{
+        visibility: visible;
+    }
+    .navigation.open ul li.active{
+        visibility: visible;
+    }
+
+    .card-container{
+        padding: 0;
+    }
+    .card-container .card{
+        width: 100%;
+        height: 180px;
+    }
+    .card-container .card .imgbx{
+        width: 98%;
+    }
+    .mainservice .card-container{
+        margin: 0;
+        margin-top: 10px;
+        width: 100%;
+        padding: 0;
+    }
+    details{
+        text-align: right;
+    }
+    body > main > div > div{
+        width: 200px;
+        height: auto;
+        padding: 10px;
+        font-size: 7px;
+    }
+    body > main > div > div h1{
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 7px;
+    }
+    body > main > div > div a{
+        width: 60px;
+        margin-top: 7px;
+        padding: 5px 7px;
+        height: auto;
+    }
+}
+
+/* Tablet */
+@media (min-width:321px) and (max-width:1234px){
+    body{
+        padding-left: 3%;
+        background-color: var(--main-bg);
+        font-size: 14px;
+    }
+    .navigation{
+        width: 75px;
+        height: 60px;
+    }
+    .navigation > *{
+        visibility: hidden;
+    }
+    .navigation .menuToggle{
+        visibility: visible;
+    }
+    .navigation.open > *{
+        visibility: visible;
+    }
+    .navigation.open{
+        visibility: visible;
+        width: 95%;
+        height: auto;
+    }
+    .navigation ul li a {
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+    .navigation ul li.active a {
+        display: block;
+        margin-left: 3%;
+        width: 90%;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation.open ul li.active a .icon{
+        display: inline-block;
+    }
+    .navigation ul li.active a .text{
+        display: inline-block;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation ul li.active{
+        visibility: visible;
+    }
+    .navigation.open ul li.active{
+        visibility: visible;
+    }
+
+    .card-container .card{
+        width: 299px;
+        height: 180px;
+    }
+    .card-container .card .imgbx{
+        width: 98%;
+    }
+    details{
+        text-align: right;
+    }
+    .mainservice .card-container{
+        padding: 20px;
+    }
+    body > main > div > div{
+        height: auto;
+    }
+    body > main > div > div a{
+        height: auto;
+    }
+    /* card  */
+}

@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1.25em;
+    /* 1em = 16px  */
+    /* 1.25em = 20px approx */
+}
+.sec1,.sec2,.sec3{
+    width: 100%;
+    position: relative;
+    height: 400px;
+}
+.sec1{
+    background: #00203f;
+}
+.sec2{
+    background: palegreen;
+}
+.sec3{
+    background: #00203f;
+}
+.sec2::before{
+    content: '';
+    position: absolute;
+    border-top: 100px solid transparent;
+    border-right: 98.77vw solid palegreen;
+    top: -100px;
+}
+.sec2::after{
+    content: '';
+    position: absolute;
+    border-bottom: 100px solid transparent;
+    border-left: 98.77vw solid palegreen;
+    bottom: -100px;
+    z-index: 1;
+}

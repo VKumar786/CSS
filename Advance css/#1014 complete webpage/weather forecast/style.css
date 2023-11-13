@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+*{
+    color: rgb(7, 1, 1);
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-image: url(https://source.unsplash.com/1600x900/?nature,water);
+    box-sizing: border-box;
+    padding: 160px 60px;
+    max-height: 100vh;
+}
+#weatherContainer{
+    background: #fff;
+    padding: 40px 20px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+#iconsContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+#iconsContainer .icons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    flex: auto 1;
+    transform: translateY(0);
+    transition: 0.5s;
+}
+#iconsContainer .icons:hover{
+   transform: translateY(-20px);
+}
+center{
+    background: #fff;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 40px 20px;
+    position: relative;
+}
+center h1{
+    color: #00bcd4;
+    position: absolute;
+    top: 10px;
+    margin: 0;
+    padding: 0;
+    left: 20px;
+}
+center input{
+    position: absolute;
+    top: 70px;
+    left: calc(20px + 250px);
+    width: 40%;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 110%;
+    color: #333;
+    outline: none;
+}
+center h2{
+    margin: 0;
+    padding: 0;
+}
+
+center button {
+    position: absolute;
+    top: 70px;
+    left: calc(550px + 250px);
+    width: 150px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 110%;
+    transition: 0.5s;
+    overflow: hidden;
+}
+center button:hover{
+    background: #fff;
+    border: 1px solid #00bcd4;
+    color: #00bcd4;
+}
+center #cityName{
+    font-size: 10px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* #cityInput, #cityName, #inputContainer,button{
+    margin: 3px;
+    padding:5px;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+}
+
+#weatherContainer{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 1300px;
+    border: 5px solid rgba(97, 95, 95, 0.829);    
+    border-radius: 10px;
+}
+
+#iconsContainer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    height: 240px;
+    width: 1200px;    
+    border: 5px solid rgb(31, 82, 82);    
+    border-radius: 10px;
+}
+
+.icons{
+    display: inline-bock;
+    float: left;
+    height: 200px;
+    width: 190px;
+    margin: 20px;
+    border: 5px solid rgb(48, 47, 47);
+    border-radius: 10px;
+}
+
+.image{
+    height: 140px;
+    width: 100%;
+}
+
+.imgClass{
+    height: 140px;
+    width: 100%;
+}
+
+.weather{
+    margin: 5px;
+    background-color: rgb(106, 215, 255);
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.minValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+
+.maxValues{
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    height: 25px;
+    width: 85px;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 5px;
+} */

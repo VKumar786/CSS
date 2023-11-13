@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+    background: #00ff97;
+}
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 4em;
+    color: #fff;
+    font-weight: bold;
+    animation: animate 20s infinite linear;
+}
+@keyframes animate {
+    0%{
+        transform: translate(-50%,-50%) rotate(-360deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+}
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    background: #d40056;
+    z-index: 100;
+    mix-blend-mode: difference;
+    color: #00ff97;
+}
+/* lettering.js
+circletupe.min */

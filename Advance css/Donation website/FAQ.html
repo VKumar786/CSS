@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropdown Menu with Search Box | CodingNepal</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- header section -->
+    <div class="wrapper" id="myHeader">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img class="logo-img" src="images/logo.png" alt="">
+                        SaveLife<span style="color: #17705c;">.</span>
+                    </a>
+                </div>
+                <ul class="links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li>
+                        <a href="./Causes.html" class="desktop-link">Causes</a>
+                        <input type="checkbox" id="show-features">
+                        <label for="show-features">Features</label>
+                        <ul>
+                            <li><a href="#">Drop Menu 1</a></li>
+                            <li><a href="#">Drop Menu 2</a></li>
+                            <li><a href="#">Drop Menu 3</a></li>
+                            <li><a href="#">Drop Menu 4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./What We Do_.html" class="desktop-link">Pages</a>
+                        <input type="checkbox" id="show-services">
+                        <label for="show-services">Services</label>
+                        <ul>
+                            <li><a href="#">Drop Menu 1</a></li>
+                            <li><a href="#">Drop Menu 2</a></li>
+                            <li><a href="#">Drop Menu 3</a></li>
+                            <li>
+                                <a href="#" class="desktop-link">More Items</a>
+                                <input type="checkbox" id="show-items">
+                                <label for="show-items">More Items</label>
+                                <ul>
+                                    <li><a href="#">Sub Menu 1</a></li>
+                                    <li><a href="#">Sub Menu 2</a></li>
+                                    <li><a href="#">Sub Menu 3</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="./Blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="header-box3">
+                <div class="social-media-icon">
+                    <a href="./FAQ.html">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-google"></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </div>
+                <div class="sign-up-button">
+                    <a href="#">
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+            <!-- <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label> -->
+            <!-- <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form> -->
+        </nav>
+    </div>
+
+
+    <!-- intro2 start here  -->
+    <div class="intro2-container1" style="margin-bottom: 0;">
+        <div class="center-wrapper1">
+            <div class="flex1">
+                <h4>Home - FAQ</h4>
+                <h3>Have Any Question?</h3>
+            </div>
+            <div class="flex1">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos magnam dolor perspiciatis sunt
+                    libero impedit voluptate error nemo aut nihil. </p>
+            </div>
+        </div>
+        <div class="cloud1"></div>
+        <div class="cloud2"></div>
+    </div>
+
+
+    <!-- Global Causes start here -->
+    <div class="global-container" style="flex-direction:column;height: auto;padding: 7rem 3rem">
+        <h2 class="custom-h2">Frequently Asked Questions</h2>
+        <div class="global-wrapper">
+            <div class="main-container">
+
+                <div class="tab custom-tab">
+                    <button class="tablinks" onclick="openTab(event, 'GeneralFAQ')">
+                        GeneralFAQ
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'HelpFAQ')">
+                        HelpFAQ
+                    </button>
+                    <button class="tablinks" onclick="openTab(event, 'CharitiesFAQ')">
+                        CharitiesFAQ
+                    </button>
+                </div>
+
+
+                <div id="GeneralFAQ" class="tabcontent custom-tabcontent">
+                    <h2>GeneralFAQ</h2>
+
+                    <button class="accordion">
+                        What is Charity safe?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">
+                        Why do I need charity safe?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Because your chartiable dollars are too precious to waste on organiztion that do not spend
+                            your money wisely.charity whatch is not afraid to take a strong stand about the practices of
+                            specfic charities and provide information that smae charities wourld rather not diclose.</p>
+                    </div>
+
+                    <button class="accordion">
+                        Wont't a charity provide me with all the information I need to make an informed giving decision?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">
+                        why is charity whatch's information an indeispesable tool for informed donors?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">
+                        How can I join charity safe?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">
+                        Who funds charity safe?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">
+                        How does charity watch decide which organiztion to evaluate and rate?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">
+                        How often does Charity watch update a charity's rating and other information?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">
+                        What is the benefit of Charity watch's print publicatoin, the charity Rating Guide & Watchdog
+                        Report?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">
+                        Why doesn't Charity watch make all of its information avaliable on the interned for free?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                </div>
+
+                <div id="HelpFAQ" class="tabcontent custom-tabcontent">
+                    <h2>HelpFAQ</h2>
+
+                    <button class="accordion">
+                        What is Charity safe?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">
+                        Why do I need charity safe?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Because your chartiable dollars are too precious to waste on organiztion that do not spend
+                            your money wisely.charity whatch is not afraid to take a strong stand about the practices of
+                            specfic charities and provide information that smae charities wourld rather not diclose.</p>
+                    </div>
+
+                    <button class="accordion">
+                        Wont't a charity provide me with all the information I need to make an informed giving decision?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                </div>
+
+                <div id="CharitiesFAQ" class="tabcontent custom-tabcontent">
+                    <h2>CharitiesFAQ</h2>
+
+                    <button class="accordion">
+                        What is Charity safe?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">
+                        Why do I need charity safe?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Because your chartiable dollars are too precious to waste on organiztion that do not spend
+                            your money wisely.charity whatch is not afraid to take a strong stand about the practices of
+                            specfic charities and provide information that smae charities wourld rather not diclose.</p>
+                    </div>
+
+                    <button class="accordion">
+                        Wont't a charity provide me with all the information I need to make an informed giving decision?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">
+                        why is charity whatch's information an indeispesable tool for informed donors?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">
+                        How can I join charity safe?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">
+                        Who funds charity safe?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">
+                        How does charity watch decide which organiztion to evaluate and rate?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion">
+                        How often does Charity watch update a charity's rating and other information?
+                        <ion-icon name="chevron-down-circle-outline"></ion-icon>
+                    </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- volunter section start here  -->
+    <div class="volunteer-container">
+        <div class="intro-section-container">
+            <img src="./images/volunteer-image.png" alt="">
+        </div>
+        <div class="intro-section-container">
+            <h2>
+                Want to become a
+                <span> volunteer? </span>
+            </h2>
+            <a href="./Volunteer.html">Join Us Today</a>
+        </div>
+    </div>
+
+    <!-- footer section start here  -->
+    <footer>
+        <div class="footer-container">
+            <div class="flex1-footer-container">
+
+                <div class="logo">
+                    <a href="#">
+                        <img class="logo-img" src="images/logo.png" alt="">
+                        SaveLife<span style="color: #17705c;">.</span>
+                    </a>
+                </div>
+
+                <a href="#">
+                    <p>© 2022 Care.</p>
+                    <p>All Rights Reserved</p>
+                </a>
+
+                <div class="social-media-icon">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <ion-icon name="logo-google"></ion-icon>
+                    <ion-icon name="logo-github"></ion-icon>
+                </div>
+
+            </div>
+            <div class="flex1-footer-container">
+                <h2>Quick Link</h2>
+                <a href="./Volunteer.html">Volunteer</a>
+                <a href="#">Want to Dontate</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Privacy policy</a>
+            </div>
+            <div class="flex1-footer-container">
+                <h2>Contact</h2>
+                <a href="#">4967 Sardis Sta,</a>
+                <a href="#">Victoria 8007, Montreal.</a>
+                <a href="#">+1 246-345-0695</a>
+                <a href="#">support@artstudio.com</a>
+            </div>
+            <div class="flex1-footer-container">
+                <h2>Get email updates</h2>
+                <form action="#">
+                    <input type="email" name="" placeholder="Enter your email" id="">
+                </form>
+                <p>*we never share your privacy</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- https://ionic.io/ionicons/usage icon  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./js/main.js"></script>
+
+    <script>
+        window.addEventListener('load', (event) => {
+            openTab(event, 'GeneralFAQ')
+        });
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // // FAQ section js start here
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+
+        
+		// headers sticky
+		window.onscroll = function () {
+			myFunction()
+		};
+
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+		}
+    </script>
+
+</body>
+
+</html>

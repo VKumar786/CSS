@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>contact form</title>
+	<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+	<!-- {% extends "layout.html" %} -->
+<!-- {% block body %} -->
+	<main>
+		<h2>CONTACT US</h2>
+		<div id="conactainer">
+			<div class="con1">
+				<h3>INDIA</h3>
+				<span>Main Office</span>
+				<ul>
+					<li>4th Floor, 6-3-664/401, Prestige Rai Nagar, Somajiguda, Hyderabad.</li>
+					<li>Contact Person : MD Khaleel</li>
+					<li>+91 98499 99920</li>
+					<li><a href="#">info@infinityglobalvisas.com</a></li>
+					<hr>
+					<span>Branch Office</span>
+					<li>Flat No - F7, Divya Apartment, Beside Metro Pillar No - 910, Bharath Nagar, Moosapet, Hyderabad - 500 018.</li>
+					<hr>
+					<li>St.No.02, Bathinda Road, S.A.S, Nagar, Sri Muktsar Sahib - Punjab</li>
+					<li>Contact Person : Mr. Pinka</li>
+					<li>+91 90526 60001</li>
+					<li><a href="#">info@infinityglobalvisas.com</a></li>
+				</ul>
+			</div>
+			<div class="con1">
+				<h3>AUSTRALIA</h3>
+				<span>Address</span>
+				<ul>
+					<li>2/497 Wentworth ave, Toongabbie 2146, Sydney, Australia.</li>
+					<li>+61 42662 2775</li>
+					<!-- <li></li>  -->
+					<!-- md adii bhai don't leave any extra empty li -->
+					<li><a href="#">admin@infinityglobalvisas.com</a></li>
+					<hr>
+					<h3>BANGLADESH</h3>
+					<h3>Address</h3>
+					<li>16/5 Moulavi Para , Gopalgonj, City of Gopalgonj, Bangladesh.</li>
+					<li>+880 19 1880 5853</li>
+					<li><a href="#">info@infinityglobalvisas.com</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="form">
+			<h3>Get In Touch</h3>
+			<form>
+				<label for="name">Name:<label>
+				<input id="name" type="text" name="name" placeholder="Name">
+				<label for="email">Email:<label>
+				<input id="email" type="email" name="email" placeholder="email">
+				<label for="number">Phone Number:<label>
+				<input id="number" type="number" name="number" placeholder="Number">
+				<label for="message">Message:<label>
+				<textarea id="message" cols="30" rows="10" name="message"></textarea>
+			</form>
+		</div>
+	</main>
+	<!-- {% endblock %} -->
+</body>
+</html>

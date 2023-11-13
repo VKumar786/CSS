@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapsibles/Accordion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Animated Accordion</h2>
+    <p>Click on the buttons to open the collapsible content.</p>
+
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.</p>
+    </div>
+
+    <script>
+
+        let accordion = document.querySelectorAll('.accordion')
+        for(let i = 0; i< accordion.length; i++){
+            accordion[i].addEventListener('click',function(){
+                accordion[i].classList.toggle('active')
+                let pannel = accordion[i].nextElementSibling
+                if(pannel.style.minHeight){
+                    pannel.style.minHeight = null;
+                    console.log('this is null line')
+                }else{
+                    pannel.style.minHeight = pannel.scrollHeight + 'px';
+                    console.log('asdfsad')
+                }
+
+
+                // for this solution put .panel{ display:none; transition:display 0.5s ease}
+                // if(pannel.style.display === 'none'){
+                //     pannel.style.display = 'block'
+                //     console.log('hi')
+                // }
+                // else 
+                //     pannel.style.display = 'none'
+            })
+        }
+
+    </script>
+
+
+</body>
+
+</html>

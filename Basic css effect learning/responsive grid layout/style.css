@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 1.5fr 1fr;
+    grid-template-areas: "header menu menu menu"
+    "hero hero hero hero"
+    "main main main image"
+    "banner banner banner banner";
+}
+header{
+    background: #25CCF7;
+    grid-area: header;
+}
+menu{
+    background: #55E6C1;
+    grid-area: menu;
+    margin: 0;
+    padding: 0;
+}
+#hero{
+    background: #2C3A47;
+    grid-area: hero;
+}
+main{
+    grid-area: main;
+    background: #9AECDB;
+}
+#image{
+    grid-area: image;
+    background: #FC427B;
+}
+#banner{
+    grid-area: banner;
+    background: #182C61;
+}
+@media only screen and (max-width:768px) {
+    body{
+        grid-template-columns: repeat(4,0.5fr);
+        grid-template-rows: 0.5fr 1.5fr 1fr 0.5fr 0.5fr;
+        font-size: 25px;
+        grid-template-areas: "header header header header"
+        "hero  hero hero hero"
+        "menu main main main"
+        "menu banner banner banner"
+        "menu  image image image"; 
+    }
+}
+@media only screen and (max-width:480px) {
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr 1fr 0.75fr 0.75fr;
+        grid-template-areas: "header"
+        "menu"
+        "hero"
+        "main"
+        "banner"
+        "image";
+        font-size: 20px;
+    }
+}

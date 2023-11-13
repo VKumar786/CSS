@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confetti falling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h2>Requested Video</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis ab culpa iste necessitatibus error modi ratione quod quaerat corrupti doloribus totam sapiente odio praesentium similique, beatae quo. Doloribus voluptatem ducimus dicta laboriosam, tempore nemo nobis praesentium omnis, error voluptatibus nisi libero! Quam, rem cum numquam error molestiae illum, quia temporibus culpa commodi quas ea voluptas ullam quod quaerat! Ab iusto necessitatibus neque, culpa tempore quod omnis minima quam error est provident consequatur dignissimos impedit optio fuga adipisci laboriosam asperiores? Illum ea consequuntur, reprehenderit aspernatur vero quo, quasi magni modi similique laboriosam temporibus corporis veritatis ullam facilis a, itaque ipsa nostrum sunt delectus. Porro itaque nostrum quisquam? Unde magnam, totam consequuntur nulla sit eaque illo, impedit nemo possimus perferendis odio reprehenderit saepe suscipit asperiores earum hic mollitia quibusdam facere. Doloribus corporis quibusdam perferendis odio laboriosam hic dolor animi cum ad rerum? Blanditiis nostrum iusto, repudiandae dolor nesciunt nihil amet doloribus, quas suscipit ut expedita aliquid magnam quod cum delectus neque sit earum sint deserunt at maiores! Quisquam doloribus, quia reiciendis accusantium ipsa unde deserunt, asperiores quod aliquam natus laudantium in repudiandae possimus ex corporis pariatur, dolor sint similique alias dicta eaque. Veritatis nemo alias quam ullam libero veniam nostrum iste repellat.</p>
+        <button class="btn">
+            click Here
+        </button>
+
+        <div class="popup">
+            <h2>Your content goes here ...</h2>
+            <b class="close">x</b>
+        </div>
+    </section>
+
+
+
+    <canvas id="my-canvas"></canvas>
+
+
+
+
+
+    <!-- confetti script from github -->
+    <script src="./index.min.js"></script>
+
+    <script>
+
+        let btn = document.querySelector('.btn')
+        let popup = document.querySelector('.popup')
+        let close1 = document.querySelector('.close')
+        let myCanvas = document.querySelector('#my-canvas')
+
+        close1.addEventListener('click',()=>{
+            popup.classList.remove('active')
+            myCanvas.classList.remove('active')
+        })
+
+        btn.addEventListener('click',()=>{
+            popup.classList.add('active')
+            myCanvas.classList.add('active')
+        })
+
+        var confettiSettings = { target: 'my-canvas' };
+        var confetti = new ConfettiGenerator(confettiSettings);
+        confetti.render();
+    </script>
+
+    <!--
+    search in chrome about 
+    confetti generator github
+     -->
+</body>
+</html>

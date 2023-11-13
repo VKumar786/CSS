@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="blur">
+        <div class="content">
+            <h2>simple heading </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint deserunt dicta at ea commodi aspernatur doloribus facere ratione earum, debitis voluptas temporibus numquam deleniti, natus quam ducimus in, repudiandae id!</p>
+            <img src="./151442-cameras-feature-stunning-photos-from-the-national-sony-world-photography-awards-2020-image1-evuxphd3mr.jpg" alt="">
+            <a href="#" onclick="toggle();">Read More.</a>
+        </div>
+    </div>
+    <div id="popup">
+        <h2>simple heading </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore porro vel nam voluptatum at! Illum fugiat tenetur velit quia magnam, doloremque corrupti nesciunt laborum ab, laboriosam corporis dignissimos nobis optio.</p>
+        <a href="#" onclick="toggle();">close</a>
+    </div>
+    <script>
+        function toggle(){
+            var blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            var popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

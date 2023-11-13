@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+nav{
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+}
+.brand{
+    line-height: 80px;
+    margin: 0 10%;
+    float: left;
+}
+.brand a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #333;
+}
+ul{
+    float: right;
+    display: flex;
+    line-height: 1.5;
+    margin-right: 7.5%;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    margin-right: 25px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #333;
+    font-weight: 400;
+    transition: 0.5s;
+    line-height: 80px;
+    font-size: 20px;
+    transform: scale(1);
+}
+ul:hover li{
+    opacity: 0.2;
+    filter: blur(2px);
+}
+ul li a:hover{
+    color: #000;
+}
+ul li:hover{
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+section.class01{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    font-size: 20px;
+    z-index: -1;
+}
+section.class01 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section.class01 .container01{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 1000px;
+}
+section.class01 .container01 h2{
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #333;
+}
+section.class01 .container01 p{
+    color: #000;
+    letter-spacing: 1px;
+}
+section.class01 .container01 button{
+    background: #fff;
+    padding: 5px;
+    font-size: 25px;
+    outline: none;
+    border: 2px solid #000;
+    width: 125px;
+}
+.container02{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card{
+    margin: 0.75%;
+}
+.container03{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 30vh;
+    background: #ff6f61;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container04{
+    width: 80%;
+    height: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+}
+.container05{
+    width: 80%;
+    margin: 150px auto;
+    border: 2px solid gainsboro;
+    padding: 25px;
+    border-radius: 10px;
+}
+footer{
+    background: rgb(163, 163, 163);
+    position: relative;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}
+.offcanvas-body h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.container06{
+    width: 80%;
+    text-align: justify;
+    margin: 30px auto;
+    font-size: 20px;
+}
+.container06 h2{
+    text-align: center;
+    display: inline-block;
+    background: purple;
+    color: #fff;
+    padding: 10px;
+    margin: 35px 0 20px 0;
+}

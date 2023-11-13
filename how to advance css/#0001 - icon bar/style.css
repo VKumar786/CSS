@@ -1,0 +1,56 @@
+/* vertical menu */
+
+/* .icon-bar{
+    width: 90px;
+    background: #444;
+}
+
+.icon-bar a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    min-width: 100%;
+    text-align: center;
+    line-height: 100px;
+    transition: 0.5s;
+}
+.icon-bar a.active{
+    background: #04AA6D;
+}
+.icon-bar a:hover{
+    background: #000;
+}
+.icon-bar a i{
+    font-size: 35px;
+} */
+
+
+/* horizontal menu  */
+.icon-bar{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background: #444;
+    align-items: center;
+    justify-content: right;
+}
+.icon-bar a{
+    display: inline-block;
+    color: #fff;
+    width:70px;
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: 0.5s ease;
+}
+.icon-bar a:hover{
+    background: #000;
+}
+.icon-bar a.active{
+    background: #04AA6D;
+}

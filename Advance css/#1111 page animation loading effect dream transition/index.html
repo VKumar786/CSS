@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- linking my css file to the html file -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div id="loader">
+        <img src="./giphy.gif" >
+    </div>
+    <div id="page1">
+        <h2>home page <br>
+            <a onclick="appearp1()">Loading...</a>
+        </h2>
+    </div>
+    <div id="page2">
+        <h2>login page <br>
+            <a onclick="appearp2()">Loading...</a>
+        </h2>
+    </div>
+
+    <script>
+        function appearp1(){
+            var loader = document.getElementById("loader");
+            var page1 = document.getElementById("page1");
+            var page2 = document.getElementById("page2");
+            loader.style.left = "0";
+            setTimeout(function(){
+                loader.style.left = "-100%";
+                page1.style.display = "none";
+                page2.style.display = "block";
+            }, 2000);
+            // here the time out mean the duratioon of the transtion 
+        }
+        function appearp2(){
+            var loader = document.getElementById("loader");
+            var page1 = document.getElementById("page1");
+            var page2 = document.getElementById("page2");
+            loader.style.left = "0";
+            setTimeout(function(){
+                loader.style.left = "-100%";
+                page1.style.display = "block";
+                page2.style.display = "none";
+            }, 2000);
+            // here the time out mean the duratioon of the transtion 
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="43px" viewBox="0 0 54 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>browser</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-616.000000, -1823.000000)">
+            <g id="browser" transform="translate(618.000000, 1825.000000)">
+                <g id="图层_1">
+                    <g id="Group">
+                        <g transform="translate(7.100159, 5.916799)">
+                            <polyline id="Shape" stroke="#3B9921" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="0 8.32256928 0 33.1340736 42.6009518 33.1340736 42.6009518 8.32256928"></polyline>
+                            <rect id="Rectangle-path" stroke="#3B9921" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" x="0" y="0" width="42.6009518" height="9.46687817"></rect>
+                            <ellipse id="Oval" fill="#3B9921" cx="4.10744177" cy="4.3654142" rx="1.46144932" ry="1.44606564"></ellipse>
+                            <ellipse id="Oval" fill="#3B9921" cx="8.00542886" cy="4.3654142" rx="1.46144932" ry="1.44606564"></ellipse>
+                            <ellipse id="Oval" fill="#3B9921" cx="11.9034159" cy="4.3654142" rx="1.46144932" ry="1.44606564"></ellipse>
+                        </g>
+                        <polyline id="Shape" stroke="#3B9921" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="2.924082 34.3174334 0 34.3174334 0 0 43.7843116 0 43.7843116 2.36671954"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

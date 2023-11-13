@@ -1,0 +1,48 @@
+@keyframes animate {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -400%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+#slider{
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1220px;
+    border: 5px solid grey;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    animation: animate 20s infinite ;
+}

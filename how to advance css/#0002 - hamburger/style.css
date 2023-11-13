@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.hamburger{
+    background: #000;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.hamburger div{
+    position: relative;
+    background: #fff;
+    width: 250px;
+    height: 30px;
+    transition: 0.1s;
+}
+
+.hamburger div::after,
+.hamburger div::before{
+    position: absolute;
+    content: '';
+    background: #fff;
+    width: 250px;
+    height: 30px;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburger div::after{
+    transform: translateY(-70px);
+}
+
+.hamburger div::before{
+    transform: translateY(70px);
+}
+.hamburger:hover div{
+    visibility: hidden;
+}
+.hamburger:hover div::after{
+    transform-origin: center center;
+    transform: rotate(45deg);
+    visibility: visible;
+}   
+.hamburger:hover div::before{
+    transform-origin: center center;
+    transform: rotate(-45deg);
+    visibility: visible;
+}   
+
+

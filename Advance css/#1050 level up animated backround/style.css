@@ -1,0 +1,51 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
+    background-size: 400% 400%;
+    animation: saste_coder 10s ease-in-out infinite;
+}
+@keyframes saste_coder {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.container{
+    position: relative;
+    width: 80%;
+    height: 500px;
+    /* background: #fff; */
+    background: url(./city.jpg);
+    background-size: cover;
+    box-shadow: 0  0  10px rgba(0, 0, 0, 0.25);
+}
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    border: 2px solid #fff;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding: 10px 20px;
+}

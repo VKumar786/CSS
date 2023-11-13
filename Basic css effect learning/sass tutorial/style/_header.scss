@@ -1,0 +1,14 @@
+header{
+    background: lightblue;
+    height: 100vh;
+    color: $Textcolor;
+    button{
+        background: $primaryBtn;
+        border: none;
+        &:hover{
+            background: grey;
+            color: honeydew;
+        }
+    }
+    width: 100% - 20%;
+}

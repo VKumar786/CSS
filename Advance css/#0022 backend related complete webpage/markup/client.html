@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- all the meta tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description"
+        content="Infinity Global Visas is a visa consultancy, process the visa to study, work, visit, dependent, immigration, perminant in abroad countries. IGVS Guide you through every step that you take.">
+    
+    <!-- title of the webpage -->
+    <title> client </title>
+
+    <!-- linking all the css file -->
+    <link rel="shortcut icon" href="/static/main/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/main/css/styles.css">
+    <link rel="stylesheet" href="/static/main/css/quaries.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/client.css">
+
+    <!-- icon of the webpage -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+
+
+    <!-- starting of navigation menu -->
+    <nav class="menu-container">
+
+        <!-- nav bar start here -->
+        <div class="navigation">
+
+            <!-- nav bar toogle menu  -->
+            <div class="menuToggle">
+
+            </div>
+
+            <!-- list item of navbar -->
+            <ul>
+
+                <li class="list" style="--clr:#f44336">
+                    <a href="../index.html" rel="noopener noreferrer">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+
+                <li class="list" style="--clr:#ffa117">
+                    <a href="./about.html" rel="noopener noreferrer">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">About</span>
+                    </a>
+                </li>
+
+                <li class="list" style="--clr:#b145e9">
+                    <a href="./service.html" rel="noopener noreferrer">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="text">Service</span>
+                    </a>
+                </li>
+
+                <li class="list" style="--clr:#2196f3">
+                    <a href="./university.html" rel="noopener noreferrer">
+                        <span class="icon">
+                            <ion-icon name="school-outline"></ion-icon>
+                        </span>
+                        <span class="text">Universities</span>
+                    </a>
+                </li>
+
+                <li class="list" style="--clr:#0fc70f">
+                    <a href="./blog.html" rel="noopener noreferrer">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="text">Blog</span>
+                    </a>
+                </li>
+
+                <li class="list" style="--clr:#08f7fe">
+                    <a href="./client.html" rel="noopener noreferrer">
+                        <span class="icon">
+                            <ion-icon name="school-outline"></ion-icon>
+                        </span>
+                        <span class="text">Clients</span>
+                    </a>
+                </li>
+
+                <li class="list" style="--clr:#09fbd3">
+                    <a href="./contact.html" rel="noopener noreferrer">
+                        <span class="icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </span>
+                        <span class="text">Contact</span>
+                    </a>
+                </li>
+
+            </ul>
+            <!-- end of list of navbar  -->
+
+        </div>
+        <!-- nav bar start here -->
+
+        <!-- script of navbar start here  -->
+        <script>
+            const menuToggle = document.querySelector('.menuToggle')
+            const navigation = document.querySelector('.navigation')
+            var body = document.getElementsByTagName("BODY")[0];
+            menuToggle.onclick = function () {
+                navigation.classList.toggle('open')
+                body.classList.toggle('open')
+            }
+
+            const list = document.querySelectorAll('.list')
+            function activeLink() {
+                list.forEach((item) => {
+                    item.classList.remove('active')
+                    this.classList.add('active')
+                })
+            }
+            list.forEach((item) => {
+                // item.addEventListener('click', activeLink)
+                item.addEventListener('mouseover', activeLink)
+            })
+        </script>
+        <!-- script of navbar ends here  -->
+
+    </nav>
+    <!-- ending of navigation menu -->
+
+    <!-- login of webpage start here -->
+    <div>
+
+        <details>
+
+            <summary>User Links</summary>
+
+            <summary>
+
+                <a href="/blog/create">Create a New Blog Post</a>
+                <a href="/client-create">Create a New client Post</a>
+
+            </summary>
+
+            <summary>
+
+                <a href="/signup">Create a new user</a>
+
+            </summary>
+
+            <summary>
+
+                Welcome Designer
+                <a href="/logout">Logout</a>
+
+            </summary>
+
+        </details>
+
+    </div>
+    <!-- login of webpage ends here -->
+
+    
+    <!-- main sectio start here  -->
+    <main>
+
+        <div class="main-container">
+
+            <section id="box">
+
+                <div class="heading">
+
+                    <span>Comments</span>
+                    <h1>clients says</h1>
+
+                </div>
+
+                <div class="container">
+
+                    <!-- box -->
+                    <div class="box">
+
+                        <div class="box-top">
+
+                            <div class="profile">
+
+                                <div class="profile-img">
+                                    <img src="../images/c-1.jpg" alt="">
+                                </div>
+
+                                <div class="name-user">
+                                    <strong>Touseeq Ijaz</strong>
+                                    <span>@subscribeToSasteCoder</span>
+                                </div>
+
+                            </div>
+                            <div class="reviews">
+
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-regular.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="comment">
+
+                            <p>Since 2000, my clients have benefited from my professional consulting services. As a leading Consultant
+                                based in San Francisco, I&#x27;ve guided clients through important decisions and changes. At Infinity
+                                Global Visas, I&#x27;ve managed to transform the lives of my clients through a number of services</p>
+                                
+                            <a href="/client-2">View detail</a>
+
+                        </div>
+                    </div>
+
+                    <!-- box -->
+                    <div class="box">
+
+                        <div class="box-top">
+
+                            <div class="profile">
+
+                                <div class="profile-img">
+                                    <img src="../images/c-2.jpg" alt="">
+                                </div>
+
+                                <div class="name-user">
+                                    <strong>Touseeq Ijaz</strong>
+                                    <span>@subscribeToSasteCoder</span>
+                                </div>
+
+                            </div>
+                            <div class="reviews">
+
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-regular.svg" alt="">
+
+                            </div>
+
+                        </div>
+                        <div class="comment">
+
+                            <p>Have a particular challenge youre trying to deal with? Contact me today and see what I can do for you.
+                                Have a particular challenge youre trying to deal with? Contact me today and see what I can do for you.
+                                Have a particular challenge youre trying to deal with? Contact me today and see what I can do for you.
+                            </p>
+                            <a href="/client-3">View detail</a>
+
+                        </div>
+                    </div>
+
+                    <!-- box -->
+                    <div class="box">
+
+                        <div class="box-top">
+
+                            <div class="profile">
+                                
+                                <div class="profile-img">
+                                    <img src="../images/c-3.jpg" alt="">
+                                </div>
+
+                                <div class="name-user">
+                                    <strong>Touseeq Ijaz</strong>
+                                    <span>@subscribeToSasteCoder</span>
+                                </div>
+
+                            </div>
+
+                            <div class="reviews">
+
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-regular.svg" alt="">
+
+                            </div>
+                        </div>
+
+                        <div class="comment">
+
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ullam reiciendis
+                                perferendis a. Numquam facilis assumenda possimus voluptatibus ipsa quo suscipit nostrum
+                                consectetur nihil, autem quisquam! Sed quae culpa et.</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- box -->
+                    <div class="box">
+
+                        <div class="box-top">
+
+                            <div class="profile">
+
+                                <div class="profile-img">
+                                    <img src="../images/c-4.jpg" alt="">
+                                </div>
+
+                                <div class="name-user">
+                                    <strong>Touseeq Ijaz</strong>
+                                    <span>@subscribeToSasteCoder</span>
+                                </div>
+
+                            </div>
+                            <div class="reviews">
+
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-solid.svg" alt="">
+                                <img src="./star-regular.svg" alt="">
+
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates ullam reiciendis
+                                perferendis a. Numquam facilis assumenda possimus voluptatibus ipsa quo suscipit nostrum
+                                consectetur nihil, autem quisquam! Sed quae culpa et.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+        
+    </main>
+
+
+
+
+    <!-- fontawesome my kit -->
+    <script src="https://kit.fontawesome.com/162dba6519.js" crossorigin="anonymous"></script>
+
+
+
+
+    <!-- icon script -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery in one video</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<body>
+    
+    <!-- we are going to learn 
+    1. What is jquery?
+    2. How to use ?
+    3. jquery selector?
+    4. jquery events
+    5. jquery effects
+    6. jquery html/css
+    7. jquery tranversing
+    8. jquery ajax -->
+
+    <!-- what is the defination of jquery? -->
+    <!-- jquery is a fast and concise javascript libary that simplifies html document tranversing , event handling , animating and ajax interraction for rapid web development  -->
+
+    <!-- how to use jquery? -->
+    <!-- html document tranversing , event handling , animating and ajax interraction for rapid web development
+    there are two version of jquery availabe for downloading 
+    1. Production version - this is for your live website because it has been minified and compressed
+    2. Development version - this is for testing and development . it is use for plugin ( uncompressed and readable code ) -->
+
+    <button class="as01">click me</button>
+    <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem magnam nihil quos saepe quae quis delectus porro nobis. Nobis, ut nemo odit quas itaque at soluta minima commodi possimus corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, similique. Vel, odio et. Iusto voluptates facere voluptatibus ea excepturi illum unde voluptas rerum fuga doloremque, expedita dolore earum tempore rem!</div>
+
+    <input type="text" name="" id="">
+    <span id="focusid">welcome</span>
+    <span id="blurid">to my channel</span>
+
+    <!-- effects()  -->
+    <!-- toggle is the mixture of show and hide  -->
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus omnis aperiam id sequi ab, vitae tempora quaerat nesciunt ad fuga qui ullam nihil, laudantium maxime veritatis. Earum voluptas dolorum id.</p>
+
+    <!-- what is the difference between focus and blur 
+        when we are in marrage we want other to be in blur 
+    what is the difference between append and prepend 
+        prepend - pre means to be first -->
+    <script>
+        // $(document).ready(function(){
+
+        //     $('button').mouseenter(function(){
+        //         $('.text').toggle(1000);
+        //         // 1000 millisec = 1 sec 
+        //     });
+        //     $('button').mouseleave(function(){
+        //         alert("dont leave");
+        //         // 1000 millisec = 1 sec 
+        //     });
+        //     // $('input').keyup(function(){
+            //     //     alert("this is keyboard event");
+            //     //     console.log("this is keyboard event");
+            //     // });
+            // });
+        $(function(){
+            $('.as01').mouseenter(function(){
+                $('.text').toggle(1000);
+                // 1000 millisec = 1 sec 
+            });
+            $('span').hide();
+            $('.as01').mouseleave(function(){
+                alert("dont leave");
+                // 1000 millisec = 1 sec 
+            });
+            $('input').focus(function(){
+                $('#focusid').show().fadeOut(500).fadeIn(500);
+            })
+            $('input').blur(function(){
+                $('#blurid').show();
+            })
+            $('p').on({
+                mouseenter:function(){
+                    $(this).css({"background-color": "yellow", "padding": "20px"});
+                },
+                mouseleave:function(){
+                    $(this).css({"background-color": "pink", "padding": "20px"});
+                },
+                click:function(){
+                    alert('this is the way to handdle multiple events');
+                }
+            })
+        })
+    </script>
+
+    <button class="as02">clik me </button>
+    <ul>
+        <li><a href="#">mango</a></li>
+        <li><a href="#">banana</a></li>
+        <li><a href="#">king</a></li>
+    </ul>
+    <ol>
+        <li><a href="#">asdfjh</a></li>
+        <li><a href="#">asdfasdf</a></li>
+        <li><a href="#">asdf</a></li>
+    </ol>
+    <script>
+        $(function(){
+            $('.as02').click(function(){
+                $('ul').append('<li>alsjdfklj</li>');
+                // if we want to add on clik event 
+                $('ol').prepend('<li>king</li>');
+                // this is helpful when we have to enter the employee at the last of the list we use append and vise versa 
+            })
+            // difference between remove and empty 
+            // remove that the whole element is removed
+            // remove that the whole element inside it will be removed 
+        })
+    </script>
+
+
+
+</body>
+</html>

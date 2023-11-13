@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+    background: #00203f;
+    color: aliceblue;
+}
+h1{
+    position: absolute;
+    top: 50%;    
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+h1 span{
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    padding: 10px 20px;
+    box-shadow: 0 5px 3px rgba(255, 255, 255, 0.5);
+    animation: animate 0.5s infinite;
+}
+/* h1 span:nth-child(1){
+    animation-delay: 0.2s;
+}
+h1 span:nth-child(2){
+    animation-delay: 0.4s;
+}
+h1 span:nth-child(3){
+    animation-delay: 0.6s;
+}
+h1 span:nth-child(4){
+    animation-delay: 0.8s;
+} */
+/* there are alternative  */
+/* h1 span:nth-child(odd){
+    animation-delay: 0.2s;
+} */
+/* there are alternative  */
+h1 span:nth-child(odd){
+    animation-delay: 0.2s;
+}
+h1 span:nth-child(even){
+    animation-delay: 0s;
+}
+/* thanks for watching sir  */
+/* if you want some improvment in this video plz commet */
+@keyframes animate {
+    0%{
+        transform: translateY(0); 
+    }
+    50%{
+        box-shadow: 0 5px 3px rgba(255, 255, 255, 0.5), inset 0 5px 3px rgba(0, 0, 0, .3);
+        transform: translateY(-15px); 
+
+    }
+    100%{
+        transform: translateY(0); 
+    }
+}

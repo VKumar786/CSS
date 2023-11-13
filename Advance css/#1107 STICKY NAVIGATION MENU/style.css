@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.text{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    font-size: 4em;
+    background: #262626;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+}
+ul{
+    position: relative;
+    width: 93.77vw;
+    height: 50px;
+    display: flex;
+    background: #00a8ff;
+    margin: 0;
+    padding: 0;
+    padding-left: 5%;
+    overflow: hidden;
+}
+ul li{
+    list-style: none;
+    line-height: 50px;
+
+    overflow: hidden;
+}
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    /* background: #000; */
+    display: block;
+    margin-left: 20px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+ul li a:hover{
+    background: #0097e6;
+    padding: 0 10px;
+}
+section{
+    height: 40vh;
+    text-align: justify;
+    padding: 30px;
+
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/* thanks for watching 
+subscribe 
+like 
+share */

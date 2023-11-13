@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Read More Option Tutorial</title>
+</head>
+<body>
+    <div class="container">
+        <h2>simple heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum numquam, necessitatibus distinctio vero excepturi id laborum provident voluptatibus maiores molestias repudiandae, impedit expedita fuga voluptatum dolore autem temporibus quos beatae? 
+            <span id="dots">...</span>
+            <!-- we have use span becouse of inline property  -->
+            <span id="more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatibus officia architecto odio sequi aut voluptatem voluptatum, sapiente repudiandae nesciunt nihil qui dicta vitae dolores labore rem a cupiditate eos?</span>
+        </p>
+        <button onclick="myfunction();" id="btn">Read More</button>
+    </div>
+    <script>
+        function myfunction(){
+            var dots = document.getElementById("dots");
+            var more = document.getElementById("more");
+            var btn = document.getElementById("btn");
+            if(dots.style.display === "none")
+            {
+                dots.style.display = "inline";
+                more.style.display = "none";
+                btn.innerHTML = "Read More";
+                
+            }else{
+                dots.style.display = "none";
+                more.style.display = "inline";
+                btn.innerHTML = "Read less";    
+            }
+        }
+    </script>
+</body>
+</html>

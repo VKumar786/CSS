@@ -1,0 +1,4 @@
+npm install -D tailwindcss postcss autoprefixer
+npm install vite
+npx tailwindcss init
+  <script src="https://cdn.tailwindcss.com"></script>

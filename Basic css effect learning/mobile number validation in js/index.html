@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+    mobile number validation in javascript
+        1. empty
+        2. there is no special character enter by user only number (0-9)
+        3. 10 digit length
+        4. 9, 8, 7 -> starting from this .
+
+     -->
+    <form action="#" onsubmit="return myfunction();">
+        <label for="mobileno">Mobile no : </label>
+        <input type="text" name="mobileno" id="mobileno" value="">
+        <span id="message"></span>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        function myfunction(){
+            var m = document.getElementById('mobileno').value;
+            var message = document.getElementById('message');
+            if(m == ""){
+                message.innerHTML = "**please fill mobile number";
+                return false;
+            }
+            if(isNaN(m)){
+                message.innerHTML = "** only number are allowed";
+                return false;
+            }
+            // if(a.length<10){
+            //     message.innerHTML = "** number must be 10 digit";
+            //     return false;
+            // }
+            // if(a.length>10){
+            //     message.innerHTML = "** number must be 10 digit";
+            //     return false;
+            // }
+            if(m.length!=10){
+                message.innerHTML = "** number must be 10 digit";
+                return false;
+            }
+            if((m.charAt(0)!=9) && (m.charAt(0)!=7) && (m.charAt(0)!=8)){
+                message.innerHTML = "** it must start with 9,8,7";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

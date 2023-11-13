@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.en{
+    color: #333;
+}
+.hn{
+    color: #00a1ff;
+}
+.container{
+    position: relative;
+    max-width: 600px;
+    width: 500px;
+    padding: 50px;
+    color: #555;
+}
+.container .content{
+    display: none;
+    margin-top: 20px;
+}
+.container .content.contentEnglish{
+    display: block;
+}
+.check{
+    position: relative;
+    width: 60px;
+    margin: 10px;
+}
+.check::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+
+}
+.check::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.5s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.check:checked::before{
+    background: #00a1ff;
+}
+.check:checked::after{
+    border: 2px solid #00a1ff;
+    left: 35px;
+}
+.check:checked ~ .content.contentEnglish{
+    display: none;
+}
+.check:checked ~ .content.contentHindi{
+    display: block;
+}

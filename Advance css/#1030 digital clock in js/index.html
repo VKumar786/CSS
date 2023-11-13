@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="clock">
+        <h2>the time is now</h2>
+        <div id="time">
+            <div>
+                <span id="hour">00</span>
+                <span>Hours</span>
+            </div>
+            <div>
+                <span id="Minutes">00</span>
+                <span>Minutes</span>
+            </div>
+            <div>
+                <span id="Secounds">00</span>
+                <span>Secounds</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        function clock(){
+            var Hours = document.getElementById('hour');
+            var Minutes = document.getElementById('Minutes');
+            var Secounds = document.getElementById('Secounds');
+            var h = new Date().getHours();
+            var m = new Date().getMinutes();
+            var s = new Date().getSeconds();
+            Hours.innerHTML = h;
+            Minutes.innerHTML = m;
+            Secounds.innerHTML = s;
+            
+        }
+        var interval = setInterval(clock, 1000);
+        // if we put () then the time of the clock will take one round 
+        // we have refresh it ourself to get the time 
+    </script>
+</body>
+</html>

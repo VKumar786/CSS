@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    animation: backgrounds 20s infinite;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000;
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 1px #ccc,1px 2px 2px #ccc,1px 3px 3px #ccc,1px 4px 4px #ccc,1px 5px 5px #ccc,1px 6px 6px #ccc; 
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+@keyframes backgrounds {
+    0%{
+        background: #00FFFF;
+    }
+    20%{
+        background: #9D00FF;
+    }
+    40%{
+        background: #FF00CC;
+    }
+    60%{
+        background: #00FF66;
+    }
+    80%{
+        background: #FF3300;
+    }
+    100%{
+        background: #00FFFF;
+    }
+    
+}

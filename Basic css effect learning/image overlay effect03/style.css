@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+.box figure{
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.box figure img{
+    width: 100%;
+    height: 100%;
+}
+.box figcaption h2{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.box:hover figcaption{
+    opacity: 1;
+}
+.box figcaption{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background: #000; */
+    color: #000;
+    margin-top: 13%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+}
+.box figure::before,
+.box figure::after{
+    position: absolute;
+    content: '';
+    background: #000;
+    width: 200%;
+    height: 200%;
+    transition: 0.5s;
+    
+}
+.box figure::before{
+    background: rgb(128, 255, 2,0.8);
+    right: 0;
+    bottom: 0;
+    transform: skew(45deg) translateX(100%);
+}
+.box figure::after{
+    background: rgba(0, 255, 213,0.8);
+    left: 0;
+    top: 0;
+    transform: skew(-135deg) translateX(-100%);
+}
+.box:hover figure::after{
+    transform: skew(-135deg) translateX(0);
+}
+.box:hover figure::before{
+    transform: skew(45deg) translateX(0);
+}
+
+.box figcaption p{
+    text-align: justify;
+    margin: 0 10%;
+}

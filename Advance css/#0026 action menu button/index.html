@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Menu Button</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="action">
+        <div class="profile" id="myMenuProfile-00k-001">
+            <img src="https://images.unsplash.com/photo-1630304565761-d6f8d5a0facd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y3V0ZSUyMGJhYnl8ZW58MHx8MHx8&w=1000&q=80" alt="">
+        </div>
+        <div class="menu" id="myMenu-00k-001">
+            <h2>Someone Famous <br> <span>Website Designer</span></h2>
+            <ul>
+                <li>
+                    <ion-icon name="person-outline"></ion-icon>
+                    <a href="#">My Profile</a>
+                </li>
+                <li>
+                    <ion-icon name="create-outline"></ion-icon>
+                    <a href="#">Edit Profile</a>
+                </li>
+                <li>
+                    <ion-icon name="download-outline"></ion-icon>
+                    <a href="#">Indox</a>
+                </li>
+                <li>
+                    <ion-icon name="help-outline"></ion-icon>
+                    <a href="#">Help</a>
+                </li>
+                <li>
+                    <ion-icon name="log-out-outline"></ion-icon>
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let myMenuProfile = document.getElementById('myMenuProfile-00k-001')
+        let myMenu = document.getElementById('myMenu-00k-001')
+        myMenuProfile.addEventListener('click',()=>{
+            myMenu.classList.toggle('active')
+        })
+    </script>
+    
+    <!-- linking the icon  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</html>

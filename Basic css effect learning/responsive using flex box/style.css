@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.container01{
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+}
+h2{
+    text-align: center;
+    color: #999;
+    font-size: 4em;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80vw;
+    height: auto;
+    background: transparent;
+    display: flex;
+    margin: auto;
+    /* background: #30336b; */
+    height: 70vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; this is  imp */
+    /* becouse it create a smooth transition:  ; */
+    text-align: center;
+    color: #999;
+    padding: 20px;
+}
+.box{
+    height: 200px;
+    /* width: 200px; */
+    flex: 1 1 200px;
+    color: #fff;
+    font-size: 30px;
+    text-transform: capitalize;
+    line-height:200px ;
+    margin: 20px;
+}
+.box:nth-child(1){
+    background: #ff7979;
+}
+.box:nth-child(2){
+    background: #e056fd;
+}
+.box:nth-child(3){
+    background: #7ed6df;
+}
+.box:nth-child(4){
+    background: #7ed6df;
+}
+.box:nth-child(5){
+    background: #7ed6df;
+}
+.box:nth-child(6){
+    background: #7ed6df;
+}
+.box:nth-child(7){
+    background: #7ed6df;
+}
+.box:nth-child(8){
+    background: #7ed6df;
+}
+.box:nth-child(9){
+    background: #7ed6df;
+}
+.box:nth-child(10){
+    background: #7ed6df;
+}
+.box:nth-child(11){
+    background: #7ed6df;
+}
+.box:nth-child(12){
+    background: #7ed6df;
+}
+.box:nth-child(13){
+    background: #7ed6df;
+}
+@media (max-width:768px) {
+    .container{
+        height: auto;
+    }
+}

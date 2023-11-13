@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #1d1b1b;
+}
+.container{
+    width: 171px;
+    height: 99px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #ec4d37;
+    transform: translate(-50%,-50%);
+}
+.container::after,
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+    background: #ec4d37;  
+}
+.container::after{
+    transform: rotate(60deg);
+}
+.container::before{
+    transform: rotate(-60deg);
+}
+.container,
+.container::after,
+.container::before{
+    background: transparent;
+    /* border: 2px solid #fff; */
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+    background: rgb(121, 212, 16,0.5);
+    /* thanks for watching this video */
+}

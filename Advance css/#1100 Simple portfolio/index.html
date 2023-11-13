@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <script>
+        $(document).ready(function(){
+            $(".button").click(function(){
+                var value = $(this).attr("data-filter");
+                if(value == "all")
+                {
+                    $(".filter").show("1000");
+                }else{
+                    $(".filter").not("."+value).hide("1000");
+                    $(".filter").filter("."+value).show("1000");
+                }
+                // add active class 
+                $("ul .button").click(function(){
+                    $(this).addClass('active').siblings().removeClass("active");
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container ">
+        <ul>
+            <li class="button active" data-filter="all">all</li>
+            <li class="button" data-filter="website">website</li>
+            <li class="button" data-filter="graphics">graphics</li>
+            <li class="button" data-filter="psd">psd</li>
+            <li class="button" data-filter="logo">logo</li>
+            <li class="button" data-filter="application">application</li>
+            <div style="clear: both;"></div>
+        </ul>
+            <div class="box filter website">website</div>
+            <div class="box filter graphics">graphics</div>
+            <div class="box filter psd">psd</div>
+            <div class="box filter logo">logo</div>
+            <div class="box filter application">application</div>
+                <div class="box filter website">website</div>
+                <div class="box filter graphics">graphics</div>
+                <div class="box filter psd">psd</div>
+                <div class="box filter logo">logo</div>
+                <div class="box filter application">application</div>
+                    <div class="box filter website">website</div>
+                    <div class="box filter graphics">graphics</div>
+                    <div class="box filter psd">psd</div>
+                    <div class="box filter logo">logo</div>
+                    <div class="box filter application">application</div>
+    </div>
+</body>
+</html>

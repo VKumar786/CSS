@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="loader">
+        <img id="loader_img" src="./smile_loader_by_gleb.gif" alt="">
+    </div>
+    <div id="content">
+        <img src="https://wallpapercave.com/wp/iAJ39V2.jpg" alt="">
+        <img src="https://ansunibaate.com/wp-content/uploads/2020/04/4k-wallpaper14.jpg" alt="">
+        <img src="https://wallpaperaccess.com/full/127699.jpg" alt="">
+    </div>
+    <script>
+            window.onload=function(){
+            document.getElementById("loader").style.display="none";
+            document.getElementById("content").style.display="block";
+            };
+            $(window).load(function() { 
+                $('#loader').fadeOut(); 
+                $('#loader_img').delay(150).fadeOut('slow');     
+            },2000);
+    </script>
+</body>
+</html>

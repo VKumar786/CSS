@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password validation in js</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function myfunction(){
+            var A = document.getElementById("password").value;
+            var B = document.getElementById("password01").value;
+            var Message = document.getElementById("Message");
+            if(A == ""){
+                Message.innerHTML = "** you have'nt enter a password";
+                return false;
+            }
+            if(A.length<5){
+                Message.innerHTML = "** password length must be greater than 5";
+                return false;
+            }
+            if(A.length>25){
+                Message.innerHTML = "** password length must be less than 25";
+                return false;
+            }
+            if(A!=B){
+                Message.innerHTML = "** password are not similar";
+                return false;
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+    <!--     
+        Password 
+        1. Empty
+        2. Min 5 character
+        3. Maximun 20 character
+        4. If A == B or Not ...
+    -->
+    
+    <form  onsubmit="return myfunction();">
+        <!-- First Password -->
+        <label for="password">Password</label>
+        <input type="password" name="password" value="" id="password"><br>
+        <span id="Message"></span><br>
+        <!-- Secound Password -->
+            <label for="password">conform Password</label>
+            <input type="password" name="password" value="" id="password01"><br>
+            <!-- submit  -->
+                <br><input type="submit" value="submit">
+    </form>
+
+</body>
+</html>

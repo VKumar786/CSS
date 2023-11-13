@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+.content{
+    position: relative;
+}
+.content h2{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 8em;
+}
+.content h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+.content h2:nth-child(2){
+    color: #03a9f4;
+    animation: animate 20s ease-in-out infinite;
+}
+@keyframes animate{
+    0%,100%{
+        clip-path: polygon(0% 52%, 12% 51%, 22% 56%, 33% 61%, 47% 64%, 57% 60%, 69% 54%, 78% 50%, 87% 46%, 97% 40%, 100% 37%, 100% 100%, 1% 99%);
+    }
+    50%{
+        clip-path: polygon(0 58%, 10% 56%, 21% 62%, 34% 57%, 45% 52%, 56% 46%, 66% 46%, 76% 52%, 86% 57%, 94% 60%, 100% 63%, 100% 100%, 1% 99%);
+        /* css clip path maker */
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <nav>
+        <div class="brand">YADAV BOY's</div>
+        <ul>
+            <li><a href="#" title="home">Home</a></li>
+            <li><a href="#" title="Contact">Contact</a></li>
+            <li><a href="#" title="About">About</a></li>
+            <li><a href="#" title="Profile">Profile</a></li>
+        </ul>
+    </nav>
+    <section class="sec1">
+        <img src="1.jpg" alt="this is a image">
+    </section>
+    <section class="sec2">
+        <h3>this is a simple a heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos at natus quisquam aliquid asperiores, iure numquam fuga suscipit eius? Officia cum molestias consectetur beatae vitae error aspernatur ex ea nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet dolor tempore laborum temporibus quis et, vero praesentium consequuntur unde, ipsam fugiat nihil repudiandae natus voluptate quia molestias impedit nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab labore quam quaerat totam voluptas quos voluptatum culpa laudantium quod alias sed officiis omnis earum, nemo itaque neque numquam voluptate unde!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos at natus quisquam aliquid asperiores, iure numquam fuga suscipit eius? Officia cum molestias consectetur beatae vitae error aspernatur ex ea nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet dolor tempore laborum temporibus quis et, vero praesentium consequuntur unde, ipsam fugiat nihil repudiandae natus voluptate quia molestias impedit nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab labore quam quaerat totam voluptas quos voluptatum culpa laudantium quod alias sed officiis omnis earum, nemo itaque neque numquam voluptate unde!</p>
+        <h3>this is a simple a heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos at natus quisquam aliquid asperiores, iure numquam fuga suscipit eius? Officia cum molestias consectetur beatae vitae error aspernatur ex ea namLorem ipsum dolor sit amet consectetur adipisicing elit. Quos at natus quisquam aliquid asperiores, iure numquam fuga suscipit eius? Officia cum molestias consectetur beatae vitae error aspernatur ex ea nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet dolor tempore laborum temporibus quis et, vero praesentium consequuntur unde, ipsam fugiat nihil repudiandae natus voluptate quia molestias impedit nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab labore quam quaerat totam voluptas quos voluptatum culpa laudantium quod alias sed officiis omnis earum, nemo itaque neque numquam voluptate unde!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos at natus quisquam aliquid asperiores, iure numquam fuga suscipit eius? Officia cum molestias consectetur beatae vitae error aspernatur ex ea nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius amet dolor tempore laborum temporibus quis et, vero praesentium consequuntur unde, ipsam fugiat nihil repudiandae natus voluptate quia molestias impedit nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab labore quam quaerat totam voluptas quos voluptatum culpa laudantium quod alias sed officiis omnis earum, nemo itaque neque numquam voluptate unde!.</p>
+    </section>
+    <script>
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHeight =(window.pageYOffset/ totalHeight)*100;
+            progress.style.height = progressHeight +"%";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- all the meta tag -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description"
+        content="Infinity Global Visas is a visa consultancy, process the visa to study, work, visit, dependent, immigration, perminant in abroad countries. IGVS Guide you through every step that you take.">
+
+    <!-- title of the webpage -->
+    <title> IGVS. Study visa, Work visa, Visit visa, Immigration visa, Dependent visa </title>
+
+    <!-- linking all the css file -->
+    <link rel="shortcut icon" href="/static/main/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/main/css/styles.css">
+    <link rel="stylesheet" href="/static/main/css/quaries.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- icon of the webpage -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+
+    <!-- starting of navigation menu -->
+    <nav class="menu-container">
+
+        <!-- nav bar start here -->
+        <div class="navigation">
+
+            <!-- nav bar toogle menu  -->
+            <div class="menuToggle">
+
+            </div>
+
+            <!-- list item of navbar -->
+            <ul>
+
+                <li class="list" style="--clr:#f44336">
+                    <a href="index.html" rel="noopener noreferrer">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+
+                <li class="list" style="--clr:#ffa117">
+                    <a href="./markup/about.html" rel="noopener noreferrer">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">About</span>
+                    </a>
+                </li>
+
+                <li class="list" style="--clr:#b145e9">
+                    <a href="./markup/service.html" rel="noopener noreferrer">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="text">Service</span>
+                    </a>
+                </li>
+
+                <li class="list" style="--clr:#2196f3">
+                    <a href="./markup/university.html" rel="noopener noreferrer">
+                        <span class="icon">
+                            <ion-icon name="school-outline"></ion-icon>
+                        </span>
+                        <span class="text">Universities</span>
+                    </a>
+                </li>
+
+                <li class="list" style="--clr:#0fc70f">
+                    <a href="./markup/blog.html" rel="noopener noreferrer">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="text">Blog</span>
+                    </a>
+                </li>
+
+                <li class="list" style="--clr:#08f7fe">
+                    <a href="./markup/client.html" rel="noopener noreferrer">
+                        <span class="icon">
+                            <ion-icon name="school-outline"></ion-icon>
+                        </span>
+                        <span class="text">Clients</span>
+                    </a>
+                </li>
+
+                <li class="list" style="--clr:#09fbd3">
+                    <a href="./markup/contact.html" rel="noopener noreferrer">
+                        <span class="icon">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </span>
+                        <span class="text">Contact</span>
+                    </a>
+                </li>
+
+            </ul>
+            <!-- end of list of navbar  -->
+
+        </div>
+        <!-- nav bar start here -->
+
+        <!-- script of navbar start here  -->
+        <script>
+            const menuToggle = document.querySelector('.menuToggle')
+            const navigation = document.querySelector('.navigation')
+            var body = document.getElementsByTagName("BODY")[0];
+            menuToggle.onclick = function () {
+                navigation.classList.toggle('open')
+                body.classList.toggle('open')
+            }
+
+            const list = document.querySelectorAll('.list')
+            function activeLink() {
+                list.forEach((item) => {
+                    item.classList.remove('active')
+                    this.classList.add('active')
+                })
+            }
+            list.forEach((item) => {
+                // item.addEventListener('click', activeLink)
+                item.addEventListener('mouseover', activeLink)
+            })
+        </script>
+        <!-- script of navbar ends here  -->
+
+    </nav>
+    <!-- ending of navigation menu -->
+
+    <!-- login of webpage start here -->
+    <div>
+
+        <details>
+
+            <summary>User Links</summary>
+
+            <summary>
+
+                <a href="/blog/create">Create a New Blog Post</a>
+                <a href="/client-create">Create a New client Post</a>
+
+            </summary>
+
+            <summary>
+
+                <a href="/signup">Create a new user</a>
+
+            </summary>
+
+            <summary>
+
+                Welcome Designer
+                <a href="/logout">Logout</a>
+
+            </summary>
+
+        </details>
+
+    </div>
+    <!-- login of webpage ends here -->
+
+    <!-- main section start here  -->
+    <main>
+
+        <!-- section of main01 start here -->
+        <div class="home">
+            <h1>Infinity Global Visas</h1>
+            <span>Professional Consultant</span>
+            <p>Whatever changes you're hoping to make or goals you're trying to achieve, I'll provide you with sound
+                advice andprofessional guidance every step of the way. Take a look at my site and see all that I can do
+                for you
+                today.</p>
+        </div>
+        <!-- section of main01 start here -->
+
+        <div class="line"></div>
+
+        <!-- section of main02 start here -->
+        <div class="home">
+            <h1>My Services</h1>
+            <span>Expertise. Intuition. Ingenuity.</span>
+            <p>Do you have a goal you're trying to achieve but don't know where to begin? Let me guide you. Take a look
+                at the
+                list of my services below, and contact me if you have any questions or special requests.</p>
+        </div>
+        <!-- section of main03 start here -->
+
+
+        <!-- card section of webpage start here  -->
+        <div class="card-container">
+
+            <!-- card's of card section start here -->
+            <div class="card">
+                <div class="imgbx">
+                    <!-- <img src="/static/main/images/austrilia.png" alt=""> -->
+                    <img src="https://dogtime.com/assets/uploads/2011/03/puppy-development.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3><a href="/services" target="_blank">Australia Visa's &RightTeeArrow; Read more</a></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbx">
+                    <img src="https://premiumpethouse.com/public/img/dog-breeds/labrador/labrador-puppy-sale.jpg"
+                        alt="">
+                </div>
+                <div class="content">
+                    <h3><a href="/services" target="_blank">Canada Visa's &RightTeeArrow; Read more</a></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbx">
+                    <img src="https://i.pinimg.com/originals/43/7f/b1/437fb148ce23da531336d2c87ae8bd5e.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3><a href="/services" target="_blank">USA Visa's &RightTeeArrow; Read more</a></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbx">
+                    <img src="https://www.akc.org/wp-content/uploads/2015/10/puppy.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3><a href="/services" target="_blank">UK Visa's &RightTeeArrow; Read more</a></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbx">
+                    <img src="https://www.thesprucepets.com/thmb/-tS1TlJH2YvsrlQJlDVVAYNkW8Q=/941x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-677134577-5a76cf451d640400376b7128.jpg"
+                        alt="">
+                </div>
+                <div class="content">
+                    <h3><a href="/services" target="_blank">Singapore Visa's &RightTeeArrow; Read more</a></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbx">
+                    <img src="https://www.10wallpaper.com/wallpaper/1366x768/1106/White_puppys_outdoor_fun-Lovely_Puppies_1366x768.jpg"
+                        alt="">
+                </div>
+                <div class="content">
+                    <h3><a href="/services" target="_blank">visa's Visa's &RightTeeArrow; Read more</a></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbx">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/612/301/112/animals-1920x1080-wallpaper-preview.jpg"
+                        alt="">
+                </div>
+                <div class="content">
+                    <h3><a href="/services" target="_blank">Immigration Visa's &RightTeeArrow; Read more</a></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbx">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/879/797/135/puppy-dog-background-wallpaper-preview.jpg"
+                        alt="">
+                </div>
+                <div class="content">
+                    <h3><a href="/services" target="_blank">Dependent Visa's &RightTeeArrow; Read more</a></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgbx">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/567/384/978/animals-dog-puppies-wallpaper-preview.jpg"
+                        alt="">
+                </div>
+                <div class="content">
+                    <h3><a href="/services" target="_blank">Study in abroad &RightTeeArrow; Read more</a></h3>
+                </div>
+            </div>
+            <!-- card's of card section start here -->
+
+        </div>
+        <!-- card section of webpage start here  -->
+
+        <!-- Testimonials section start here  -->
+        <div class="home">
+            <h3>Testimonials</h3>
+            <h2>Straight from the Source</h2>
+            <p>Since 2000, my clients have benefited from my professional consulting services. As a leading Consultant
+                based
+                in
+                San Francisco, I've guided clients through important decisions and changes. At Infinity Global Visas,
+                I've
+                managed to transform the lives of my clients through a number of services catered to suit their specific
+                needs.
+                See what my clients have to say and contact me today.</p>
+            <span>Interested in joining my community of satisfied clients? Contact me today.</span>
+        </div>
+        <!-- Testimonials section ends here  -->
+
+        <div class="line"></div>
+
+        <!-- contact section start here  -->
+        <div class="home">
+            <h3>Contact Me</h3>
+            <span>Have a particular challenge youre trying to deal with? Contact me today and see what I can do for
+                you.</span>
+        </div>
+        <!-- contact section ends here  -->
+
+    </main>
+    <!-- main section ends here  -->
+
+    <!-- logo of the webpage -->
+    <a href="/" class="menu-logo">
+        <img src="https://workforce-instructors-dietary-nearest.trycloudflare.com/static/main/images/logo.png"
+            alt="logo" />
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main class="section-location">
+		<h2>Serive Page</h2>
+		<div id="conactainer">
+			<div class="con1">
+				<h3>INDIA</h3>
+				<span>Main Office</span>
+				<ul>
+					<li>4th Floor, 6-3-664/401, Prestige Rai Nagar, Somajiguda, Hyderabad.</li>
+					<li>Contact Person : MD Khaleel</li>
+					<li>+91 98499 99920</li>
+					<li><a href="#">info@infinityglobalvisas.com</a></li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.4004020759476!2d78.03995351469024!3d27.17514955528558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1646742286613!5m2!1sen!2sin" ></iframe>
+
+					<hr>
+					<span>Branch Office</span>
+					<li>Flat No - F7, Divya Apartment, Beside Metro Pillar No - 910, Bharath Nagar, Moosapet, Hyderabad - 500 018.</li>
+					<hr>
+					<li>St.No.02, Bathinda Road, S.A.S, Nagar, Sri Muktsar Sahib - Punjab</li>
+					<li>Contact Person : Mr. Pinka</li>
+					<li>+91 90526 60001</li>
+					<li><a href="#">info@infinityglobalvisas.com</a></li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.4004020759476!2d78.03995351469024!3d27.17514955528558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1646742286613!5m2!1sen!2sin"></iframe>
+				</ul>
+                
+			</div>
+			<div class="con1">
+				<h3>AUSTRALIA</h3>
+				<span>Address</span>
+				<ul>
+					<li>2/497 Wentworth ave, Toongabbie 2146, Sydney, Australia.</li>
+					<li>+61 42662 2775</li>
+					<!-- <li></li>  -->
+					<!-- md adii bhai don't leave any extra empty li -->
+					<li><a href="#">admin@infinityglobalvisas.com</a></li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.4004020759476!2d78.03995351469024!3d27.17514955528558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1646742286613!5m2!1sen!2sin" ></iframe>
+
+					<hr>
+					<h4>BANGLADESH</h4>
+					<h3>Address</h3>
+					<li>16/5 Moulavi Para , Gopalgonj, City of Gopalgonj, Bangladesh.</li>
+					<li>+880 19 1880 5853</li>
+					<li><a href="#">info@infinityglobalvisas.com</a></li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3549.4004020759476!2d78.03995351469024!3d27.17514955528558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1646742286613!5m2!1sen!2sin" ></iframe>
+				</ul>
+			</div>
+		</div>
+	</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer3">
+        <div class="container ">
+            <div class="col-md-3 footer_line animate" data-anim-delay="100" data-anim-type="fadeIn">
+                <div class="qlinks two footer_part1">
+                    <h3>Our Services</h3>
+
+                    <ul>
+                        <li>
+                            <a href="visa-document-preparation.html">
+                                Visa Document 
+                                <span class="footer_li_pretxt">Preparation</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="visit-visa.html">
+                                Visit Visa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="study-abroad.html">
+                                Study Abroad
+                            </a>
+                        </li>
+                        <li>
+                            <a href="work-visa.html">
+                                Work Visa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="immigration.html">
+                                Immigration
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-2  footer_line animate" data-anim-delay="200" data-anim-type="fadeIn">
+
+                <div class="qlinks two  footer_part1">
+
+                    <h3>Countries</h3>
+
+                    <ul>
+                        <li>
+                            <a href="countries.html#a">
+                                Study in Australia
+                            </a>
+                        </li>
+                        <li>
+                            <a href="countries.html#b">
+                                Study in Canada
+                            </a>
+                        </li>
+                        <li>
+                            <a href="countries.html#c">
+                                Study in USA
+                            </a>
+                        </li>
+                        <li>
+                            <a href="countries.html#d">
+                                Study in UK
+                            </a>
+                        </li>
+                        <li>
+                            <a href="countries.html#e">
+                                Study in Singapore
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 footer_line animate" data-anim-delay="300" data-anim-type="fadeIn">
+
+                <div class="qlinks two fotter_links22">
+                    <h3>Quick Links</h3>
+
+                    <ul class="quicklinks-second">
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about-us.html">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="why-us.html">
+                                Why Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="visa-document-preparation.html">
+                                Services
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="quicklinks-second">
+                        <li>
+                            <a href="countries.html">
+                                Countries
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 footer_line animate last" data-anim-delay="400" data-anim-type="fadeIn">
+                <div class="pl20">
+                    <div class="qlinks two footer_conta_addres">
+                        <h3>Contact Us</h3>
+                        <ul class="faddress">
+                            <li>
+                                <ion-icon name="compass-outline"></ion-icon>
+                                &nbsp; We are Located at<br>
+                                &nbsp; &nbsp; India,&nbsp; Australia,&nbsp; Bangladesh
+                            </li>
+                            <li>
+                                <ion-icon name="mail-unread-outline"></ion-icon>
+                                &nbsp; 
+                                <a
+                                    href="mailto:info@infinityglobalvisas.com" target="_top">
+                                    info@infinityglobalvisas.com
+                                </a>
+                            </li>
+                            <li>
+                                <ion-icon name="call-outline"></ion-icon>
+                                &nbsp; +91-98499 99920
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="clearfix margin_top4"></div>
+        </div>
+
+        <div class="copyright">
+            <div class="container">
+                <div class="one_half">
+                    <p style="text-align: left;">Copyrights &copy; 2019 Infinity Global Visas. All rights reserved.</p>
+                </div>
+
+                <div align="right" class="one_half last">
+                    <p style="text-align: right;">Design by 
+                        <a href="https://www.youtube.com/channel/UCB0q2gotgej-0oz4-L-6GUQ/about"
+                            style="color: #0dd8c7;" target="_blank">Vishal Kumar.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- all the js link  -->
+
+
+
+    <!-- fontawesome my kit -->
+    <script src="https://kit.fontawesome.com/162dba6519.js" crossorigin="anonymous"></script>
+
+    <!-- icon script -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

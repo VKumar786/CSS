@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        };
+        // you can also make the var and then also style them
+
+        // jQuery start here
+        $(window).load(function(){
+            $('#loader').fadeOut();
+            $('#loader-img').delay(150).fadeOut('slow');
+        },4000);
+        // here the value of delay is in milisec you can chane accordingly
+        // thanks for watching
+        // plz leave a comment 
+    </script>
+</head>
+<body>
+    <div id="loader">
+        <img src="./1.gif" alt="" id="loader-img">
+    </div>
+    <div id="content">
+        <img src="https://source.unsplash.com/random" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, accusantium cum veritatis optio culpa sequi, nostrum consequuntur inventore, blanditiis nulla fugiat et nam? Ab expedita ut quas quibusdam accusamus officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati illum sapiente maiores explicabo hic, recusandae numquam. Facilis hic, in modi nulla consequuntur assumenda optio, sed, eius beatae distinctio illum!</p>
+        <img src="https://source.unsplash.com/random" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, accusantium cum veritatis optio culpa sequi, nostrum consequuntur inventore, blanditiis nulla fugiat et nam? Ab expedita ut quas quibusdam accusamus officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati illum sapiente maiores explicabo hic, recusandae numquam. Facilis hic, in modi nulla consequuntur assumenda optio, sed, eius beatae distinctio illum!</p>
+        <img src="https://wallpaperaccess.com/full/30100.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, accusantium cum veritatis optio culpa sequi, nostrum consequuntur inventore, blanditiis nulla fugiat et nam? Ab expedita ut quas quibusdam accusamus officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati illum sapiente maiores explicabo hic, recusandae numquam. Facilis hic, in modi nulla consequuntur assumenda optio, sed, eius beatae distinctio illum!</p>
+        <img src="https://wallpaperaccess.com/full/30100.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, accusantium cum veritatis optio culpa sequi, nostrum consequuntur inventore, blanditiis nulla fugiat et nam? Ab expedita ut quas quibusdam accusamus officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati illum sapiente maiores explicabo hic, recusandae numquam. Facilis hic, in modi nulla consequuntur assumenda optio, sed, eius beatae distinctio illum!</p>
+        <img src="https://wallpaperaccess.com/full/30100.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, accusantium cum veritatis optio culpa sequi, nostrum consequuntur inventore, blanditiis nulla fugiat et nam? Ab expedita ut quas quibusdam accusamus officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati illum sapiente maiores explicabo hic, recusandae numquam. Facilis hic, in modi nulla consequuntur assumenda optio, sed, eius beatae distinctio illum!</p>
+        <img src="https://wallpaperaccess.com/full/30100.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, accusantium cum veritatis optio culpa sequi, nostrum consequuntur inventore, blanditiis nulla fugiat et nam? Ab expedita ut quas quibusdam accusamus officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae obcaecati illum sapiente maiores explicabo hic, recusandae numquam. Facilis hic, in modi nulla consequuntur assumenda optio, sed, eius beatae distinctio illum!</p>
+    </div>
+</body>
+</html>

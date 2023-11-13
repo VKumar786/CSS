@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Parallax Effects for website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section>
+        <h2>Simple Parallax effect for website</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit unde excepturi dicta enim nobis
+            accusamus aperiam officiis nesciunt quasi, debitis amet hic quos ipsa dolore harum ducimus nemo soluta ab.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quia officiis in sunt ipsa sapiente corrupti
+            aliquam deserunt modi. Fugit, dignissimos odio debitis nihil voluptates eius deserunt minus commodi
+            laudantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis beatae ratione cupiditate sequi
+            nihil accusamus reiciendis cumque a culpa aliquid voluptatem, earum voluptate fugiat quisquam iste nam ipsa
+            voluptatibus error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ut?</p>
+    </section>
+    <div class="parallaxBg">
+        <img src="https://image.cnbcfm.com/api/v1/image/105992231-1561667465295gettyimages-521697453.jpeg?v=1561667497&w=1600&h=900"
+            alt="my-image" class="parllaximg1">
+        <h2>Left</h2>
+    </div>
+
+    <section>
+        <h2>Simple Parallax effect for website</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit unde excepturi dicta enim nobis
+            accusamus aperiam officiis nesciunt quasi, debitis amet hic quos ipsa dolore harum ducimus nemo soluta ab.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quia officiis in sunt ipsa sapiente corrupti
+            aliquam deserunt modi. Fugit, dignissimos odio debitis nihil voluptates eius deserunt minus commodi
+            laudantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis beatae ratione cupiditate sequi
+            nihil accusamus reiciendis cumque a culpa aliquid voluptatem, earum voluptate fugiat quisquam iste nam ipsa
+            voluptatibus error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ut?</p>
+    </section>
+    <div class="parallaxBg">
+        <img src="https://pbs.twimg.com/media/EYhkl8YXsAc3jKP.jpg" alt="my-image" class="parllaximg2">
+        <h2>right</h2>
+    </div>
+    <section>
+        <h2>Simple Parallax effect for website</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit unde excepturi dicta enim nobis
+            accusamus aperiam officiis nesciunt quasi, debitis amet hic quos ipsa dolore harum ducimus nemo soluta ab.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quia officiis in sunt ipsa sapiente corrupti
+            aliquam deserunt modi. Fugit, dignissimos odio debitis nihil voluptates eius deserunt minus commodi
+            laudantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis beatae ratione cupiditate sequi
+            nihil accusamus reiciendis cumque a culpa aliquid voluptatem, earum voluptate fugiat quisquam iste nam ipsa
+            voluptatibus error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ut?</p>
+    </section>
+    <div class="parallaxBg">
+        <img src="https://media.npr.org/assets/img/2021/08/06/dog-4415649_wide-3ef4f36fb94397991ee6721a5c6929451178d914.jpg?s=1400"
+            alt="my-image" class="parllaximg3">
+        <h2>top</h2>
+    </div>
+    <section>
+        <h2>Simple Parallax effect for website</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit unde excepturi dicta enim nobis
+            accusamus aperiam officiis nesciunt quasi, debitis amet hic quos ipsa dolore harum ducimus nemo soluta ab.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quia officiis in sunt ipsa sapiente corrupti
+            aliquam deserunt modi. Fugit, dignissimos odio debitis nihil voluptates eius deserunt minus commodi
+            laudantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis beatae ratione cupiditate sequi
+            nihil accusamus reiciendis cumque a culpa aliquid voluptatem, earum voluptate fugiat quisquam iste nam ipsa
+            voluptatibus error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ut?</p>
+    </section>
+    <div class="parallaxBg">
+        <img src="https://dogexpress.in/wp-content/uploads/2018/03/Labrador-puppy.png"
+            alt="my-image" class="parllaximg4">
+        <!-- <img src="https://dogexpress.in/wp-content/uploads/2017/10/Pet-Dog-Registration-Panchkula.jpg"
+            alt="my-image" class="parllaximg4"> -->
+        <h2>bottom</h2>
+    </div>
+    <section>
+        <h2>Simple Parallax effect for website</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit unde excepturi dicta enim nobis
+            accusamus aperiam officiis nesciunt quasi, debitis amet hic quos ipsa dolore harum ducimus nemo soluta ab.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quia officiis in sunt ipsa sapiente corrupti
+            aliquam deserunt modi. Fugit, dignissimos odio debitis nihil voluptates eius deserunt minus commodi
+            laudantium. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis beatae ratione cupiditate sequi
+            nihil accusamus reiciendis cumque a culpa aliquid voluptatem, earum voluptate fugiat quisquam iste nam ipsa
+            voluptatibus error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ut?</p>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script>
+        let image1 = document.getElementsByClassName('parllaximg1');
+        let image2 = document.getElementsByClassName('parllaximg2');
+        let image3 = document.getElementsByClassName('parllaximg3');
+        let image4 = document.getElementsByClassName('parllaximg4');
+        new simpleParallax(image1,{
+            orientation : 'left'
+        });
+        new simpleParallax(image2,{
+            orientation : 'right'
+        });
+        new simpleParallax(image3,{
+            orientation : 'up'
+        });
+        new simpleParallax(image4,{
+            orientation : 'down'
+        });
+    </script>
+    <!-- google simple parallax > CDN link -->
+
+</body>
+
+</html>

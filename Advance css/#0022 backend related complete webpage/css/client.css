@@ -1,0 +1,312 @@
+/* client section styling start here  */
+
+/* defining root variable */
+:root{
+    /* background color  */
+    --white-bg : #fff;
+    --black-sh-01 : #202020;
+    --black-sh-02 : #252525;
+
+    /* color  */
+    --clr-01 : #3d3d3d;
+    --clr-02 : #979797;
+    --clr-03 : #f9d71c;
+    --clr-04 : #4b4b4b;
+
+    /* box - shadow color  */
+    --bx-sh-01: rgba(0, 0, 0, 0.1);
+}
+
+
+.main-container{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.main-container a{
+    text-decoration: none;
+}
+
+.main-container #box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: var(--white-bg);
+    margin: 20px 0 ;
+    width: 98.7%;
+}
+
+.main-container #box .heading{
+    letter-spacing: 1px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-container #box .heading h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    background-color: var(--black-sh-01);
+    color: var(--white-bg);
+    padding: 10px 20px;
+}
+
+.main-container #box .heading span{
+    font-size: 1.3rem;
+    color: var(--black-sh-02);
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.main-container #box .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main-container #box .container .box{
+    width: 500px;
+    box-shadow: 2px 2px 30px var(--bx-sh-01);
+    background-color: var(--white-bg);
+    padding: 20px;
+    margin: 15px;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.main-container #box .container .box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+.main-container #box .container .box .box-top .profile .profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.main-container #box .container .box .box-top .profile .profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-container #box .container .box .box-top .profile {
+    display: flex;
+    align-items: center;
+}
+
+.main-container #box .container .box .box-top .profile .name-user{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container #box .container .box .box-top .profile .name-user strong{
+    color: var(--clr-01);
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.main-container #box .container .box .box-top .profile .name-user span{
+    color: var(--clr-02);
+    font-size: 0.8rem;
+}
+
+.main-container #box .container .box .box-top .reviews{
+    color: var(--clr-03);
+}
+
+.main-container #box .container .box .box-top .reviews img{
+    width: 25px;
+}
+
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-container #box .container .box .comment p{
+    font-size: 0.9rem;
+    color: var(--clr-04);
+}
+
+@media (max-width:1196px) {
+    .box{
+        width: 100%;    
+    }
+    .heading h1{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:443px) {
+    .box-top{
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .reviews{
+        margin-top: 10px;
+    }
+}
+
+::selection{
+    color: var(--white-bg);
+    background-color: var(--black-sh-02) ;
+}
+/* client section styling ends here  */
+
+
+
+
+/* responsive main webpage  */
+
+ /* Phone */
+ @media (max-width:320px){
+    body{
+        padding-left: 3%;
+        background-color: var(--main-bg);
+        font-size: 7px;
+    }
+    .navigation{
+        width: 75px;
+        height: 60px;
+    }
+    .navigation > *{
+        visibility: hidden;
+    }
+    .navigation .menuToggle{
+        visibility: visible;
+    }
+    .navigation.open > *{
+        visibility: visible;
+    }
+    .navigation.open{
+        visibility: visible;
+        width: 95%;
+        height: auto;
+    }
+    .navigation ul li a {
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+    .navigation ul li.active a {
+        display: block;
+        margin-left: 3%;
+        width: 90%;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation.open ul li.active a .icon{
+    /* .navigation ul li.active a .icon{ */
+        display: inline-block;
+    }
+    .navigation ul li.active a .text{
+        display: inline-block;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation ul li.active{
+        visibility: visible;
+    }
+    .navigation.open ul li.active{
+        visibility: visible;
+    }
+
+    .card-container{
+        padding: 0;
+    }
+    .card-container .card{
+        width: 100%;
+        height: 180px;
+    }
+    .card-container .card .imgbx{
+        width: 98%;
+    }
+    details{
+        text-align: right;
+    }
+    .main-container #box .heading h1{
+        font-size: 20px;
+    }
+
+}
+
+/* Tablet */
+@media (min-width:321px) and (max-width:1243px){
+    body{
+        padding-left: 3%;
+        background-color: var(--main-bg);
+        font-size: 14px;
+    }
+    .navigation{
+        width: 75px;
+        height: 60px;
+    }
+    .navigation > *{
+        visibility: hidden;
+    }
+    .navigation .menuToggle{
+        visibility: visible;
+    }
+    .navigation.open > *{
+        visibility: visible;
+    }
+    .navigation.open{
+        visibility: visible;
+        width: 95%;
+        height: auto;
+    }
+    .navigation ul li a {
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+    .navigation ul li.active a {
+        display: block;
+        margin-left: 3%;
+        width: 90%;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation.open ul li.active a .icon{
+    /* .navigation ul li.active a .icon{ */
+        display: inline-block;
+    }
+    .navigation ul li.active a .text{
+        display: inline-block;
+        opacity: 1;
+        text-align: center;
+    }
+    .navigation ul li.active{
+        visibility: visible;
+    }
+    .navigation.open ul li.active{
+        visibility: visible;
+    }
+
+    .card-container .card{
+        width: 299px;
+        height: 180px;
+    }
+    .card-container .card .imgbx{
+        width: 98%;
+    }
+    details{
+        text-align: right;
+    }
+    /* card  */
+}

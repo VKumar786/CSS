@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="box">
+                <h2 class="name">product name</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./adidas.png" class="product" alt="adidas Shoes">
+            </div>
+            <div class="box">
+                <h2 class="name">product name</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./adidas.png" class="product" alt="adidas Shoes">
+            </div>
+            <div class="box">
+                <h2 class="name">product name</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <img src="./adidas.png" class="product" alt="adidas Shoes">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="Vishal">Made by Vishal Kumar B.Tech 1 year Student     </div>
+    </footer>
+    <!-- ---------Javascript start here ------------- -->
+    <script src="./vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400
+	});
+    </script>
+    <!-- ------xx---Javascript start here ----xx--------- -->
+</body>
+</html>

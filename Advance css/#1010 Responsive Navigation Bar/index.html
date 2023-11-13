@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Slidebar Menu</title>
+    <script src="https://kit.fontawesome.com/96c0e606a7.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li><a href="#">
+                <span class="icon"><i class="fas fa-home"></i></span>
+                <span class="title">Home</span>
+            </a></li>
+            <li><a href="#">
+                <span class="icon"><i class="fas fa-user-circle"></i></span>
+                <div class="title">Profile</div>
+            </a></li>
+            <li><a href="#">
+                <span class="icon"><i class="fas fa-envelope"></i></span>
+                <div class="title">Message</div>
+            </a></li>
+            <li><a href="#">
+                <span class="icon"><i class="fas fa-question-circle"></i></span>
+                <div class="title">Help</div>
+            </a></li>
+            <li><a href="#">
+                <span class="icon"><i class="fas fa-cog"></i></span>
+                <div class="title">Setting</div>
+            </a></li>
+            <li><a href="#">
+                <span class="icon"><i class="fas fa-lock"></i></span>
+                <div class="title">Password</div>
+            </a></li>
+            <li><a href="#">
+                <span class="icon"><i class="fas fa-sign-out-alt"></i></span>
+                <div class="title">Sign Out</div>
+            </a></li>
+        </ul>
+    </div>
+    <div class="toggle" onclick="toggleMenu()">
+
+    </div>
+    <script>
+        function toggleMenu(){
+            let navigation = document.querySelector('.navigation');
+            let toggle = document.querySelector('.toggle');
+            navigation.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email validation js</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./allen_solly.png" type="image/x-icon">
+</head>
+<body>
+    <div>
+        <h2>Email validation Check</h2>
+        <form action="#" id="form">
+            <div id="inputBox">
+                <input type="text" name="" id="email" placeholder="Enter Email Address" onkeydown="validation()">
+                <span id="text"></span>
+            </div>
+        </form>
+    </div>
+    <script>
+        function validation(){
+            let form = document.getElementById('form')
+            let email = document.getElementById('email').value
+            let text = document.getElementById('text')
+            let pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+
+            if(email.match(pattern)){
+                form.classList.add('valid')
+                form.classList.remove('invalid')
+                text.innerHTML = "Your Email Adress is valid"
+                text.style.color = "#00ff00"
+            }else{
+                form.classList.remove('valid')
+                form.classList.add('invalid')
+                text.innerHTML = "please enter valid email"
+                text.style.color = "#ff0000"
+            }
+        }
+    </script>
+    <script src="./main.js"></script>
+</body>
+</html>
